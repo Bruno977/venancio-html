@@ -447,3 +447,22 @@ header .menu li a:hover::before {
     pointer-events: initial;
   }
 }
+
+/***************************** CARROSSEL CATEGORIAS ***********************************/
+.carousel-categories .swiper-slide {
+  text-align: center;
+}
+.carousel-categories .swiper-slide a strong {
+  display: inline-block;
+  font-size: 0.875rem;
+  color: #000000;
+  font-weight: 700;
+  font-family: var(--secondary-font-family);
+  text-align: center;
+  padding-top: 10px;
+}
+@media screen and (max-width: 1020px) {
+  .carousel-categories .swiper-slide {
+    max-width: 130px;
+  }
+}
