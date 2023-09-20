@@ -466,3 +466,29 @@ header .menu li a:hover::before {
     max-width: 130px;
   }
 }
+
+/***************************** BANNERS DESTAQUES ***********************************/
+.banners-featured a {
+  display: block;
+  line-height: 0;
+  height: 100%;
+}
+.banners-featured img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.grid-banners-featured {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+@media screen and (max-width: 1020px) {
+  .grid-banners-featured {
+    grid-template-columns: 1fr;
+  }
+  .banners-featured {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
