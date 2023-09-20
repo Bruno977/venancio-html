@@ -233,8 +233,8 @@
       <div class="overlay-mobile-navigation"></div>
     </header>
 
-    <section>
-      <div class="swiper swiper-main-banner">
+    <section class="hide-mobile">
+      <div class="swiper swiper-main-banner main-banner">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <a href="">
@@ -262,6 +262,29 @@
             <i class="fa-solid fa-chevron-right"></i>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section class="hide-desktop">
+      <div class="swiper swiper-main-banner-mobile main-banner">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="">
+              <img src="./assets/img/banner-principal-mobile.png" alt="" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="">
+              <img src="./assets/img/banner-principal-mobile.png" alt="" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="">
+              <img src="./assets/img/banner-principal-mobile.png" alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
       </div>
     </section>
 
@@ -391,6 +414,21 @@
       navigation: {
         nextEl: '.swiper-main-banner .swiper-button-next',
         prevEl: '.swiper-main-banner .swiper-button-prev',
+      },
+      autoplay: {
+        delay: 5000,
+      },
+    });
+  </script>
+
+  <!-- Main Banner -->
+  <script>
+    const swiperMainBannerMobile = new Swiper('.swiper-main-banner-mobile', {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      pagination: {
+        el: '.swiper-main-banner-mobile .swiper-pagination',
+        type: 'bullets',
       },
       autoplay: {
         delay: 5000,
