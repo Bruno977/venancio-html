@@ -3,11 +3,7 @@
 body {
   padding-top: 151px;
 }
-@media screen and (max-width: 1020px) {
-  body {
-    padding-top: 106px;
-  }
-}
+
 .title {
   font-size: 2.5rem;
   letter-spacing: 1px;
@@ -26,11 +22,17 @@ body {
   display: none;
 }
 @media screen and (max-width: 1020px) {
+  body {
+    padding-top: 106px;
+  }
   .hide-mobile {
     display: none;
   }
   .hide-desktop {
     display: block;
+  }
+  .title {
+    font-size: 1.875rem;
   }
 }
 /***************************** BUTTON ***********************************/
@@ -375,7 +377,13 @@ header .menu li a:hover::before {
   padding: 0 15px;
   border-radius: 10px;
 }
-
+/***************************** DESCRIÇÃO HOME ***********************************/
+@media screen and (max-width: 1020px) {
+  .description-home {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+}
 /***************************** CARROSSEL ***********************************/
 .title-carrosel {
   color: var(--text-color);
@@ -401,6 +409,11 @@ header .menu li a:hover::before {
 .swiper-button-carousel-prev.swiper-button-disabled i {
   opacity: 0.3;
 }
+@media screen and (max-width: 1020px) {
+  .swiper-featured .swiper-slide {
+    max-width: 300px;
+  }
+}
 /***************************** SPOT ***********************************/
 
 .details-btn {
@@ -425,4 +438,12 @@ header .menu li a:hover::before {
   font-family: var(--text-color);
   text-align: center;
   padding-top: 25px;
+}
+
+@media screen and (max-width: 1020px) {
+  .spot .container-spot-img .details-btn {
+    opacity: 1;
+    bottom: 20px;
+    pointer-events: initial;
+  }
 }
