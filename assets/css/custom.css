@@ -410,7 +410,8 @@ header .menu li a:hover::before {
   opacity: 0.3;
 }
 @media screen and (max-width: 1020px) {
-  .swiper-featured .swiper-slide {
+  .swiper-featured .swiper-slide,
+  .swiper-featured-2 .swiper-slide {
     max-width: 300px;
   }
 }

@@ -490,7 +490,85 @@
       </div>
     </section>
 
-    <section class="pv-8">
+    <section class="container pv-8 featured-carousel-2 ov-h">
+      <div class="flex ai-c jc-sb mb-2">
+        <h4 class="title-carrosel">Detalhes do produto</h4>
+        <div class="arrows-carousel flex ai-c gap-2 hide-mobile">
+          <div class="swiper-button-carousel-prev">
+            <i class="fa-regular fa-circle-left fa-2x"></i>
+          </div>
+          <div class="swiper-button-carousel-next">
+            <i class="fa-regular fa-circle-right fa-2x"></i>
+          </div>
+        </div>
+      </div>
+      <div class="swiper swiper-featured-2 ov-visible">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide spot">
+            <div class="container-spot-img relative ov-h">
+              <img src="./assets/img/spot.png" alt="" />
+
+              <div class="details-btn">
+                <a href="" class="btn btn-primary"> Ver Detalhes </a>
+              </div>
+            </div>
+            <a href="" class="product-name-spot"
+              >Charbroilers com Pé Linha Americana</a
+            >
+          </div>
+          <div class="swiper-slide spot">
+            <div class="container-spot-img relative ov-h">
+              <img src="./assets/img/spot.png" alt="" />
+
+              <div class="details-btn">
+                <a href="" class="btn btn-primary"> Ver Detalhes </a>
+              </div>
+            </div>
+            <a href="" class="product-name-spot"
+              >Charbroilers com Pé Linha Americana</a
+            >
+          </div>
+          <div class="swiper-slide spot">
+            <div class="container-spot-img relative ov-h">
+              <img src="./assets/img/spot.png" alt="" />
+
+              <div class="details-btn">
+                <a href="" class="btn btn-primary"> Ver Detalhes </a>
+              </div>
+            </div>
+            <a href="" class="product-name-spot"
+              >Charbroilers com Pé Linha Americana</a
+            >
+          </div>
+          <div class="swiper-slide spot">
+            <div class="container-spot-img relative ov-h">
+              <img src="./assets/img/spot.png" alt="" />
+
+              <div class="details-btn">
+                <a href="" class="btn btn-primary"> Ver Detalhes </a>
+              </div>
+            </div>
+            <a href="" class="product-name-spot"
+              >Charbroilers com Pé Linha Americana</a
+            >
+          </div>
+          <div class="swiper-slide spot">
+            <div class="container-spot-img relative ov-h">
+              <img src="./assets/img/spot.png" alt="" />
+
+              <div class="details-btn">
+                <a href="" class="btn btn-primary"> Ver Detalhes </a>
+              </div>
+            </div>
+            <a href="" class="product-name-spot"
+              >Charbroilers com Pé Linha Americana</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="">
       <img
         src="./assets/img/banner-full.png"
         alt=""
@@ -567,7 +645,27 @@
     });
   </script>
 
-  <!-- Carrossel Destaque -->
+  <!-- Carrossel Destaque 2 -->
+  <script>
+    const swiperFeatured2 = new Swiper('.swiper-featured-2', {
+      spaceBetween: 20,
+      breakpoints: {
+        300: {
+          slidesPerView: 'auto',
+        },
+        1020: {
+          slidesPerView: 4,
+        },
+      },
+
+      navigation: {
+        nextEl: '.featured-carousel-2 .swiper-button-carousel-next',
+        prevEl: '.featured-carousel-2 .swiper-button-carousel-prev',
+      },
+    });
+  </script>
+
+  <!-- Carrossel Categorias -->
   <script>
     const swiperCategories = new Swiper('.carousel-categories', {
       spaceBetween: 20,
