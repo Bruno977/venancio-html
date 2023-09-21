@@ -658,3 +658,109 @@ header .menu li a:hover::before {
 .btn-newsletter:hover {
   background-color: #fff;
 }
+/***************************** NEWSLETTER ***********************************/
+
+footer {
+  background-color: #eff1f6;
+}
+.grid-footer {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  align-items: start;
+  gap: 20px;
+}
+.menu-footer h4 {
+  font-size: 1rem;
+  color: #000000;
+  font-weight: 500;
+  font-family: var(--secondary-font-family);
+  padding-bottom: 20px;
+  text-transform: uppercase;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.menu-footer h4::after {
+  content: '';
+  display: inline-block;
+  width: 40px;
+  height: 1px;
+  background-color: var(--primary-color);
+}
+.menu-footer li a {
+  font-size: 0.875rem;
+  line-height: 22px;
+  color: #000000;
+  font-weight: 400;
+  font-family: var(--secondary-font-family);
+}
+.menu-footer .submenu-footer h6 {
+  font-size: 0.875rem;
+  line-height: 22px;
+  color: #000000;
+  font-weight: 700;
+  padding-bottom: 5px;
+}
+.menu-footer ul.submenu-footer + ul.submenu-footer {
+  margin-top: 10px;
+}
+.contact-menu-footer p {
+  font-size: 0.875rem;
+  color: #000000;
+  font-weight: 700;
+}
+.contact-menu-footer li a {
+  font-size: 0.75rem;
+  line-height: 30px;
+  color: #868a97;
+  font-weight: 700;
+}
+.contact-menu-footer li + li {
+  padding-top: 10px;
+}
+.submenu-footer {
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.submenu-footer::-webkit-scrollbar {
+  width: 10px;
+}
+
+.submenu-footer::-webkit-scrollbar-track {
+  background: #fff;
+  border-radius: 10px;
+}
+
+.submenu-footer::-webkit-scrollbar-thumb {
+  background: #d9dce7;
+  border-radius: 10px;
+}
+
+.submenu-footer::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-color);
+}
+.social-media-footer li a i {
+  color: #fff;
+}
+.social-media-footer li a {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: var(--transition);
+}
+.social-media-footer li a:hover {
+  opacity: 1;
+}
+.location-footer p {
+  font-size: 0.75rem;
+  color: #000000;
+  font-weight: 500;
+}
