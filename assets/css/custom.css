@@ -605,3 +605,56 @@ header .menu li a:hover::before {
   margin-top: 20px;
   color: var(--text-color);
 }
+/***************************** NEWSLETTER ***********************************/
+.newsletter {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #e6e8ef;
+}
+.title-newsletter h2 {
+  font-size: 1.375rem;
+  color: #000000;
+  font-weight: 500;
+  padding-bottom: 10px;
+}
+.title-newsletter p {
+  font-size: 0.875rem;
+  color: #000000;
+  font-weight: 500;
+}
+.form-newsletter input {
+  height: 45px;
+  padding: 10px;
+  background-color: #fff;
+  border: 2px solid #fff;
+  transition: var(--transition);
+  color: var(--text-color);
+  border-radius: 50px;
+  width: 100%;
+}
+.form-newsletter input::placeholder {
+  color: var(--text-color);
+}
+.form-newsletter input:focus,
+.form-newsletter input:hover {
+  border-color: var(--primary-color);
+  outline: 0;
+}
+.btn-newsletter {
+  height: 45px;
+  border: 2px solid #fff;
+  color: var(--text-color);
+  background-color: transparent;
+  font-size: 0.75rem;
+  color: var(--text-color);
+  font-family: var(--secondary-font-family);
+  font-weight: 500;
+  text-transform: uppercase;
+  border-radius: 50px;
+  padding: 0px 20px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+.btn-newsletter:hover {
+  background-color: #fff;
+}
