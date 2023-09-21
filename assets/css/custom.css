@@ -575,3 +575,33 @@ header .menu li a:hover::before {
     padding-bottom: 5px;
   }
 }
+
+/***************************** BLOG ***********************************/
+
+.blog-item a {
+  display: inline-block;
+  padding-top: 20px;
+  padding-bottom: 25px;
+
+  font-size: 1rem;
+  line-height: 20px;
+  color: var(--text-color);
+  font-weight: 700;
+  font-family: var(--secondary-font-family);
+}
+.blog-item p {
+  font-size: 0.875rem;
+  line-height: 19px;
+  color: var(--text-color);
+  font-weight: 400;
+  font-family: var(--secondary-font-family);
+}
+.blog-item a:last-of-type {
+  font-size: 0.875rem;
+  padding-top: 15px;
+}
+.btn-posts.btn {
+  background-color: #e6e8ef;
+  margin-top: 20px;
+  color: var(--text-color);
+}
