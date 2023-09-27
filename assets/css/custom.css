@@ -999,6 +999,27 @@ footer {
   padding: 10px 40px;
   text-align: center;
 }
+.where-buy {
+  border-top: 1px solid #ededed;
+  margin-top: 50px;
+  padding-top: 30px;
+}
+.where-buy h4 {
+  font-size: 1.125rem;
+  line-height: 33px;
+  color: #000000;
+  font-weight: 700;
+}
+.where-buy ul li {
+  width: 100%;
+}
+.where-buy ul li a {
+  border: 1px solid #ededed;
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+}
 .tabs-buttons {
   display: flex;
   align-items: center;
@@ -1051,4 +1072,72 @@ footer {
 }
 .content-tabs p + p {
   padding-top: 10px;
+}
+
+.title-differences {
+  font-size: 1.125rem;
+  color: var(--text-color);
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+.card-differences {
+  background: #fff;
+  padding: 20px 30px;
+  border-radius: 4px;
+  position: relative;
+}
+
+.card-differences::after {
+  content: '';
+  display: block;
+  width: 75px;
+  height: 4px;
+  background-color: #afb5c7;
+
+  position: absolute;
+  top: 0;
+  left: 25px;
+  opacity: 0;
+  visibility: hidden;
+}
+.card-differences.active::after {
+  opacity: 1;
+  visibility: visible;
+}
+.card-differences.active {
+  background: #eff1f6;
+}
+
+.card-differences h4 {
+  font-size: 1rem;
+  color: #000000;
+  font-weight: 500;
+  padding-bottom: 5px;
+  position: relative;
+}
+.card-differences.active h4 {
+  font-weight: 900;
+  color: var(--text-color);
+}
+.card-differences h4::before {
+  content: '\f054';
+  font: var(--fa-font-solid);
+  font-size: 0.7rem;
+  position: absolute;
+  left: -15px;
+  bottom: 10px;
+  color: #fff;
+  opacity: 0;
+  visibility: hidden;
+}
+.card-differences.active h4::before {
+  opacity: 1;
+  visibility: visible;
+}
+
+.card-differences p {
+  font-size: 0.875rem;
+  line-height: 20px;
+  color: var(--text-color);
+  font-weight: 500;
 }
