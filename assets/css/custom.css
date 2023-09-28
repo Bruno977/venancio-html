@@ -1102,10 +1102,10 @@ footer {
 .card-differences:hover::after {
   opacity: 1;
   visibility: visible;
+  left: calc(100% - 75px);
 }
 .card-differences:hover {
   background: #eff1f6;
-  padding-left: 50px;
 }
 
 .card-differences h4 {
