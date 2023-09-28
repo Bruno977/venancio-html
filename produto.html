@@ -320,7 +320,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-sm-12">
+        <div class="col-md-6 col-sm-12 ov-h">
           <h1 class="title-product">
             Armário de Controle de Fermentação Crescepão 20 Esteiras
           </h1>
@@ -344,7 +344,36 @@
 
           <div class="where-buy">
             <h4>Onde Comprar?</h4>
-            <ul class="flex ai-c jc-sb gap-2">
+            <div class="swiper swiper-where-buy">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="">
+                    <img src="./assets/img/onde-comprar.png" alt="" />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="">
+                    <img src="./assets/img/onde-comprar.png" alt="" />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="">
+                    <img src="./assets/img/onde-comprar.png" alt="" />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="">
+                    <img src="./assets/img/onde-comprar.png" alt="" />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="">
+                    <img src="./assets/img/onde-comprar.png" alt="" />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- <ul class="flex ai-c jc-sb gap-2">
               <li>
                 <a href="">
                   <img src="./assets/img/onde-comprar.png" alt="" />
@@ -365,7 +394,7 @@
                   <img src="./assets/img/onde-comprar.png" alt="" />
                 </a>
               </li>
-            </ul>
+            </ul> -->
           </div>
         </div>
       </div>
@@ -846,5 +875,21 @@
       },
     });
   </script>
+
+  <!-- Carrossel Destaque -->
+  <script>
+    const swiperWhereBuy = new Swiper('.swiper-where-buy', {
+      spaceBetween: 20,
+      breakpoints: {
+        300: {
+          slidesPerView: 'auto',
+        },
+        1020: {
+          slidesPerView: 4,
+        },
+      },
+    });
+  </script>
+
   <script src="./assets/js/main.js"></script>
 </html>
