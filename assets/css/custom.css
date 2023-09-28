@@ -1,7 +1,7 @@
 /***************************** Geral ***********************************/
 
 body {
-  padding-top: 151px;
+  padding-top: 130px;
 }
 
 .title {
@@ -183,15 +183,22 @@ header.sticky {
 .header-middle {
   background-color: #fff;
 }
-header .menu li a {
+header .menu > li > a {
   font-size: 0.875rem;
   color: var(--text-color);
   font-weight: 700;
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 2px;
 
   position: relative;
 }
-header .menu li a::before {
+header .menu > li > a i {
+  font-size: 0.5rem;
+  opacity: 0;
+}
+header .menu > li > a::before {
   content: '';
   position: absolute;
   top: calc(100% + 5px);
@@ -202,9 +209,59 @@ header .menu li a::before {
   opacity: 0;
   transition: var(--transition);
 }
-header .menu li a:hover::before {
+header .menu > li:hover > a::before {
   opacity: 1;
   width: 50%;
+}
+header .menu > li:hover > a i {
+  opacity: 1;
+}
+
+@media screen and (min-width: 1020px) {
+  .submenu-bottom {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    box-shadow: 0px 3px 6.5px rgba(0, 0, 0, 0.08);
+    background: #fff;
+
+    display: none;
+  }
+  li.has-submenu:hover .submenu-bottom {
+    display: block;
+    animation-duration: 200ms;
+    animation-delay: 250ms;
+    animation-fill-mode: both;
+    animation-name: animation_menu;
+    -webkit-transform-origin: 0 0 0;
+  }
+
+  .submenu-content-bottom h4 a {
+    font-size: 0.875rem;
+    line-height: 30px;
+    color: #000000;
+    font-weight: 700;
+    display: block;
+  }
+  .subsubmenu-bottom a {
+    display: block;
+    font-size: 0.875rem;
+    line-height: 22px;
+    color: #000000;
+    font-weight: 500;
+  }
+  @keyframes animation_menu {
+    0% {
+      visibility: hidden;
+      transform: scale(1, 0.7);
+    }
+
+    100% {
+      visibility: visible;
+      transform: scale(1, 1);
+    }
+  }
 }
 
 /* Header Mobile */
