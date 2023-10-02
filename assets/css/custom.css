@@ -500,12 +500,27 @@ header .menu > li:hover > a i {
   text-align: center;
   padding-top: 25px;
 }
-
+.btn-details-mobile {
+  display: none;
+}
 @media screen and (max-width: 1020px) {
   .spot .container-spot-img .details-btn {
     opacity: 1;
     bottom: 20px;
     pointer-events: initial;
+  }
+  .btn-details-mobile {
+    margin-top: 10px;
+    height: 2rem;
+  }
+  .btn-details-mobile {
+    display: inline-flex;
+  }
+  .spot {
+    text-align: center;
+  }
+  .product-name-spot {
+    padding-top: 10px;
   }
 }
 
@@ -989,6 +1004,77 @@ footer {
 }
 .breadcrumbs a:last-of-type {
   font-weight: 900;
+}
+
+@media screen and (max-width: 1020px) {
+  .container-breadcrumbs {
+    background-color: #eff1f6;
+  }
+  .container-breadcrumbs {
+    padding-top: 0;
+  }
+  .bg-mobile {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+  .sidebar {
+    position: fixed;
+    top: 140px;
+    bottom: 50px;
+    left: -100%;
+    width: 85%;
+    z-index: 999;
+    background: #fff;
+    padding: 40px 20px;
+    overflow: auto;
+    box-shadow: 0 -7px 0 var(--primary-color);
+    transition: var(--transition);
+  }
+  .sidebar.active {
+    left: 0;
+  }
+  .side-cont-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    visibility: hidden;
+    z-index: -1;
+  }
+  .side-cont-overlay.active {
+    opacity: 1;
+    visibility: visible;
+    z-index: 99;
+  }
+  .close-side-cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 999;
+    top: 140px;
+    right: -100%;
+    box-shadow: 0 -7px 0 var(--primary-color), 0 7px 0 var(--primary-color);
+
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    color: #fff;
+    width: 15%;
+    height: 45px;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: var(--transition);
+  }
+  .close-side-cont.active {
+    right: 0px;
+  }
+  .pagination .pagination-prev,
+  .pagination .pagination-next {
+    padding: 0 20px;
+  }
 }
 /***************************** PAGINA PRODUTO ***********************************/
 
