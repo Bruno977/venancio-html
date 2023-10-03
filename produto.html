@@ -17,7 +17,7 @@
     <title>Produto</title>
   </head>
   <body>
-    <header class="header-product">
+    <header class="border">
       <div class="top-header bg-primary pv-2">
         <div class="container">
           <div class="flex ai-c jc-sb">
@@ -92,7 +92,7 @@
       </div>
 
       <div class="header-middle">
-        <div class="container pv-4">
+        <div class="container">
           <div class="flex ai-c gap-12-lg header-content">
             <button
               class="hide-desktop btn-menu-mobile toggle-menu-mobile"
@@ -108,22 +108,126 @@
             </div>
 
             <ul class="menu flex-1 flex ai-c gap-8 hide-mobile">
-              <li>
-                <a href="">Institucional</a>
+              <li class="has-submenu pv-4">
+                <a href=""> Institucional <i class="fa-solid fa-plus"></i></a>
+                <div class="submenu-bottom">
+                  <div class="container pv-5">
+                    <ul class="submenu-content-bottom columns md-gap">
+                      <li class="col-md-3 col-sm-12">
+                        <h4>
+                          <a href="">Linha Doméstica</a>
+                        </h4>
+                        <ul class="subsubmenu-bottom">
+                          <li>
+                            <a href="">Aquecedores </a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="col-md-3 col-sm-12">
+                        <h4>
+                          <a href="">Linha Industrial</a>
+                        </h4>
+                        <ul class="subsubmenu-bottom">
+                          <li>
+                            <a href="">Armários de Crescimento </a>
+                          </li>
+                          <li>
+                            <a href="">Bancadas de Apoio</a>
+                          </li>
+                          <li>
+                            <a href=""> Chapas Deguste</a>
+                          </li>
+                          <li>
+                            <a href=""> Chapas Inox e Cavaletes</a>
+                          </li>
+                          <li>
+                            <a href=""> Char Broilers e Cavaletes</a>
+                          </li>
+                          <li>
+                            <a href=""> Check-outs</a>
+                          </li>
+                          <li>
+                            <a href=""> Buffets/Estufa de Alimentos</a>
+                          </li>
+                          <li>
+                            <a href="">Fogões de Aço Carbono</a>
+                          </li>
+                          <li>
+                            <a href="">Fogões de Aço Inox</a>
+                          </li>
+                          <li>
+                            <a href="">Fogões com Forno e de Mesa</a>
+                          </li>
+                          <li>
+                            <a href=""> Fornos Assadores</a>
+                          </li>
+                          <li>
+                            <a href=""> Buffets/Estufa de Alimentos</a>
+                          </li>
+                          <li>
+                            <a href="">Fogões de Aço Carbono</a>
+                          </li>
+                          <li>
+                            <a href="">Fogões de Aço Inox</a>
+                          </li>
+                          <li>
+                            <a href="">Fogões com Forno e de Mesa</a>
+                          </li>
+                          <li>
+                            <a href=""> Fornos Assadores</a>
+                          </li>
+                        </ul>
+                      </li>
+
+                      <li class="col-md-3 col-sm-12">
+                        <ul class="subsubmenu-bottom">
+                          <li>
+                            <a href=""> Fornos Assadores</a>
+                          </li>
+                          <li>
+                            <a href=""> Buffets/Estufa de Alimentos</a>
+                          </li>
+                          <li>
+                            <a href="">Fogões de Aço Carbono</a>
+                          </li>
+                          <li>
+                            <a href="">Fogões de Aço Inox</a>
+                          </li>
+                          <li>
+                            <a href="">Fogões com Forno e de Mesa</a>
+                          </li>
+                          <li>
+                            <a href=""> Fornos Assadores</a>
+                          </li>
+                        </ul>
+                      </li>
+
+                      <li class="col-md-3 col-sm-12">
+                        <ul class="subsubmenu-bottom">
+                          <li>
+                            <a href=""
+                              ><img src="./assets/img/banner-menu.png" alt="" />
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </li>
-              <li>
+              <li class="pv-4">
                 <a href="">Produtos</a>
               </li>
-              <li>
+              <li class="pv-4">
                 <a href="">Onde Comprar</a>
               </li>
-              <li>
+              <li class="pv-4">
                 <a href="">Representantes</a>
               </li>
-              <li>
+              <li class="pv-4">
                 <a href="">Pós-vendas</a>
               </li>
-              <li>
+              <li class="pv-4">
                 <a href="">Contato</a>
               </li>
             </ul>
@@ -234,7 +338,7 @@
       <div class="overlay-mobile-navigation"></div>
     </header>
 
-    <div class="container pv-2">
+    <div class="container pv-2 breadcrumbs-product">
       <div class="breadcrumbs" style="margin-bottom: 0">
         <a href="">Home</a>
         <span>»</span>
@@ -244,7 +348,7 @@
       </div>
     </div>
 
-    <section>
+    <section class="hide-mobile">
       <a href="">
         <img
           src="./assets/img/banner-product.png"
@@ -253,8 +357,17 @@
         />
       </a>
     </section>
+    <section class="hide-desktop">
+      <a href="">
+        <img
+          src="./assets/img/main-banner-mobile-product.png"
+          alt=""
+          class="w-100 h-100 object-cover"
+        />
+      </a>
+    </section>
 
-    <section class="container pv-8">
+    <section class="container pv-8 container-product-mobile">
       <h1 class="title">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
       </h1>
@@ -263,7 +376,7 @@
         pellentesque sapien metus quis nisi.<br />
         Maecenas in auctor eros. Ut id euismod nulla.
       </p>
-      <div class="columns lg-gap">
+      <div class="columns lg-gap ov-h columns-product">
         <div class="col-md-6 col-sm-12 ov-h">
           <div class="">
             <div class="swiper swiper-product">
@@ -320,7 +433,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-sm-12 ov-h">
+        <div class="col-md-6 col-sm-12 ov-h column-description">
           <h1 class="title-product">
             Armário de Controle de Fermentação Crescepão 20 Esteiras
           </h1>
@@ -344,7 +457,7 @@
 
           <div class="where-buy">
             <h4>Onde Comprar?</h4>
-            <div class="swiper swiper-where-buy">
+            <div class="swiper swiper-where-buy ov-visible">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <a href="">
@@ -464,7 +577,7 @@
 
     <section class="container pv-8">
       <h2 class="title-differences">Diferenciais do Produto</h2>
-      <ul class="columns md-gap">
+      <ul class="columns md-gap columns-featured">
         <li class="col-md-3 col-sm-12">
           <div class="card-differences active">
             <h4>Destaque 1</h4>
@@ -825,6 +938,14 @@
       navigation: {
         nextEl: '.swiper-button-thumbs-next ',
         prevEl: '.swiper-button-thumbs-prev ',
+      },
+      breakpoints: {
+        300: {
+          slidesPerView: 3,
+        },
+        1020: {
+          slidesPerView: 5,
+        },
       },
     });
 
