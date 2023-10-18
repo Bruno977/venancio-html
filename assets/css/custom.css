@@ -247,12 +247,17 @@ header .menu > li:hover > a i {
     font-weight: 700;
     display: block;
   }
-  .subsubmenu-bottom a {
+  .subsubmenu-bottom:not(.img) a {
     display: block;
     font-size: 0.875rem;
     line-height: 22px;
     color: #000000;
     font-weight: 500;
+    transform: translateX(0px);
+    transition: var(--transition);
+  }
+  .subsubmenu-bottom:not(.img) a:hover {
+    transform: translateX(10px);
   }
   @keyframes animation_menu {
     0% {
