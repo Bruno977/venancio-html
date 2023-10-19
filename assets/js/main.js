@@ -122,3 +122,34 @@ function smoothDopdown() {
 
 window.addEventListener('load', smoothDopdown);
 window.addEventListener('resize', smoothDopdown);
+
+//Cookie Consent
+let cookies = document.cookie.split(';');
+let consentButton = document.querySelector('.consent-button');
+if (consentButton) {
+  let ckExists = false;
+  for (let i = 0; i < cookies.length; i++) {
+    const cookie = cookies[i].split('=');
+    const cookieName = cookie[0].trim();
+
+    if (cookieName == 'consent') {
+      ckExists = true;
+    }
+  }
+
+  if (ckExists == false) {
+    document.querySelector('.consent').classList.add('active');
+  }
+  consentButton.addEventListener('click', (e) => {
+    e.preventDefault();
+    acceptCookie();
+  });
+
+  function acceptCookie() {
+    let hoje = new Date();
+    let expires = new Date(hoje.getTime() + 7 * 24 * 60 * 60 * 1000);
+    expires = expires.toGMTString();
+    document.cookie = `consent=true; expires=${expires}; path=/`;
+    document.querySelector('.consent').classList.remove('active');
+  }
+}
