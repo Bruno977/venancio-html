@@ -1071,6 +1071,7 @@
       pagination: {
         el: '.swiper-main-banner .swiper-pagination',
         type: 'bullets',
+        clickable:true,
       },
       navigation: {
         nextEl: '.swiper-main-banner .swiper-button-next',
@@ -1082,7 +1083,7 @@
     });
   </script>
 
-  <!-- Main Banner -->
+  <!-- Main Banner Mobile -->
   <script>
     const swiperMainBannerMobile = new Swiper('.swiper-main-banner-mobile', {
       slidesPerView: 1,
@@ -1090,6 +1091,8 @@
       pagination: {
         el: '.swiper-main-banner-mobile .swiper-pagination',
         type: 'bullets',
+        clickable:true,
+        
       },
       autoplay: {
         delay: 5000,
