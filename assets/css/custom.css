@@ -954,11 +954,18 @@ button.consent-button {
   text-transform: lowercase;
   cursor: pointer;
 }
-
+.link-privacy {
+  font-size: 0.75rem;
+  text-decoration: underline;
+  color: #000000;
+  font-weight: 700;
+  white-space: nowrap;
+}
 @media screen and (max-width: 1020px) {
   .consent .consent-content {
     flex-direction: column;
     align-items: flex-start;
+    gap: 20px;
   }
   /* .consent .consent-button {
     margin-left: 0;
