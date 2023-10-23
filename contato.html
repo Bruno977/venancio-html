@@ -453,9 +453,75 @@
           </button>
         </li>
       </ul>
-      <div class="container">
+      <div class="container pb-8">
         <ul class="content-tabs">
-          <li class="tab-content active">Contato</li>
+          <li class="tab-content active">
+            <div class="container-institucional">
+              <h2>Institucional .:. Contato</h2>
+              <p>
+                Para entrar em contato com a Venâncio, preencha o formulário
+                abaixo, selecione o departamento e clique em enviar.
+              </p>
+              <p class="label-required">
+                Campos marcados com <strong>*</strong> são de preenchimento
+                obrigatório.
+              </p>
+              <form class="form-contact">
+                <label for="name">Nome <strong>*</strong></label>
+                <input type="text" name="name" id="name" />
+                <label for="email">E-mail <strong>*</strong></label>
+                <input type="email" name="email" id="email" />
+                <div class="flex ai-c gap-2">
+                  <div class="flex-1">
+                    <label for="phone">Telefone <strong>*</strong></label>
+                    <input type="text" name="phone" id="phone" />
+                  </div>
+                  <div class="flex-1">
+                    <label for="cellphone">CELULAR *:</label>
+                    <input type="text" name="cellphone" id="cellphone" />
+                  </div>
+                </div>
+                <div class="flex ai-c gap-2">
+                  <div class="flex-1">
+                    <label for="cep">CEP <strong>*</strong></label>
+                    <input type="text" name="cep" id="cep" />
+                  </div>
+                  <div class="flex-1">
+                    <a href="">Não sei o cep</a>
+                  </div>
+                </div>
+                <label for="address">ENDEREÇO <strong>*</strong></label>
+                <input type="text" name="address" id="address" />
+
+                <div class="flex ai-fs gap-2">
+                  <div class="flex-1">
+                    <label for="city">CIDADE <strong>*</strong></label>
+                    <input type="text" name="city" id="city" />
+                  </div>
+                  <div class="flex-1">
+                    <label for="state">ESTADO <strong>*</strong></label>
+                    <select name="state" id="state">
+                      <option value="">RJ</option>
+                    </select>
+                  </div>
+                </div>
+                <label for="city">Departamento <strong>*</strong></label>
+                <select name="department" id="department">
+                  <option value=""></option>
+                </select>
+                <label for="message">MENSAGEM <strong>*</strong></label>
+                <textarea
+                  name="message"
+                  id="message"
+                  cols="30"
+                  rows="10"
+                ></textarea>
+                <div class="text-align-right mt-4">
+                  <button type="submit" class="btn btn-primary">Enviar</button>
+                </div>
+              </form>
+            </div>
+          </li>
           <li class="tab-content">Assistência Técnica</li>
           <li class="tab-content">Cadastro Novos Postos Autorizados</li>
           <li class="tab-content">Trabalhe na Venâncio</li>
@@ -464,6 +530,234 @@
         </ul>
       </div>
     </section>
+
+    <section class="newsletter hide-mobile">
+        <div class="container">
+          <div class="columns sm-gap ai-c">
+            <div class="col-md-4 col-sm-12">
+              <div class="flex ai-fs gap-3">
+                <i class="fa-regular fa-envelope fa-4x"></i>
+                <div class="title-newsletter">
+                  <h2>Deseja receber nossas novidades exclusivas?</h2>
+                  <p>
+                    Cadastre seu e-mail e receba informações periódicas da
+                    Venâncio.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-8 col-sm-12">
+              <form class="flex ai-c gap-2 form-newsletter">
+                <input type="text" name="name" id="name" placeholder="Nome" />
+                <input type="email" name="email" id="email" placeholder="Email" />
+                <button type="submit" class="btn-newsletter">Cadastrar</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <footer class="pt-8 pb-2">
+        <div class="container">
+          <ul class="grid-footer">
+            <li class="description-footer">
+              <img src="./assets/img/logo.png" alt="" />
+              <ul class="social-media-footer flex ai-c gap-2 mv-3">
+                <li>
+                  <a href="">
+                    <i class="fa-brands fa-facebook-f fa-lg"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fa-brands fa-instagram fa-lg"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fa-brands fa-youtube fa-lg"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fa-brands fa-twitter fa-lg"></i>
+                  </a>
+                </li>
+              </ul>
+  
+              <div class="location-footer">
+                <p>CNPJ: 00.000.000/0000-00</p>
+                <p>Rua Wilma Helena Kunz, nº 2469</p>
+                <p>Venâncio Aires - RS</p>
+                <p>CEP 95.800-000</p>
+              </div>
+            </li>
+            <li class="menu-footer menu-item-dropdown">
+              <h4 class="title-dropdown title-dropdown-active">Institucional</h4>
+              <ul class="submenu-footer menu-dropdown">
+                <li>
+                  <a href="">Quem Somos </a>
+                </li>
+                <li>
+                  <a href=""> História </a>
+                </li>
+                <li>
+                  <a href=""> Showroom </a>
+                </li>
+                <li>
+                  <a href=""> Política de Gestão </a>
+                </li>
+                <li>
+                  <a href=""> Contato </a>
+                </li>
+              </ul>
+            </li>
+  
+            <li class="menu-footer menu-item-dropdown">
+              <h4 class="title-dropdown">Produtos</h4>
+              <div class="menu-dropdown">
+                <ul class="submenu-footer">
+                  <li>
+                    <h6>Linha Doméstica</h6>
+                    <ul class="subsubmenu-footer">
+                      <li>
+                        <a href="">Aquecedores</a>
+                      </li>
+                      <li>
+                        <a href="">Churrasqueiras</a>
+                      </li>
+                      <li>
+                        <a href="">Fogões a Lenha</a>
+                      </li>
+                      <li>
+                        <a href="">Panelas e Frigideiras de Ferro Fundido</a>
+                      </li>
+                      <li>
+                        <a href="">Rechauds e Chapas de Ferro Fundido</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+                <ul class="submenu-footer">
+                  <li>
+                    <h6>Linha Industrial</h6>
+                    <ul class="subsubmenu-footer">
+                      <li>
+                        <a href="">Aquecedores</a>
+                      </li>
+                      <li>
+                        <a href="">Churrasqueiras</a>
+                      </li>
+                      <li>
+                        <a href="">Aquecedores</a>
+                      </li>
+                      <li>
+                        <a href="">Churrasqueiras</a>
+                      </li>
+                      <li>
+                        <a href="">Aquecedores</a>
+                      </li>
+                      <li>
+                        <a href="">Churrasqueiras</a>
+                      </li>
+                      <li>
+                        <a href="">Aquecedores</a>
+                      </li>
+                      <li>
+                        <a href="">Churrasqueiras</a>
+                      </li>
+                      <li>
+                        <a href="">Churrasqueiras</a>
+                      </li>
+                      <li>
+                        <a href="">Churrasqueiras</a>
+                      </li>
+                      <li>
+                        <a href="">Churrasqueiras</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </li>
+  
+            <li class="menu-footer menu-item-dropdown">
+              <h4 class="title-dropdown">Venâncio</h4>
+              <ul class="submenu-footer menu-dropdown">
+                <li>
+                  <a href="">Trabalhe Conosco </a>
+                </li>
+                <li>
+                  <a href=""> Blog </a>
+                </li>
+                <li>
+                  <a href=""> Downloads </a>
+                </li>
+                <li>
+                  <a href=""> Seja Fornecedor </a>
+                </li>
+                <li>
+                  <a href=""> Perguntas Frequentes </a>
+                </li>
+                <li>
+                  <a href=""> Consulte Atendimento</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-footer menu-item-dropdown">
+              <h4 class="title-dropdown">Fale Conosco</h4>
+              <ul class="contact-menu-footer menu-dropdown">
+                <li>
+                  <p>Central de Atendimento</p>
+                  <a href="tel:+5137934300">
+                    <span>+55</span>
+                    (51) 3793.4300
+                  </a>
+                </li>
+                <li>
+                  <p>Pós-Vendas</p>
+                  <a href="tel:+5137934300">
+                    <span> +55 </span>
+                    (51) 3793-4343
+                  </a>
+                  <a href="mailto:contato@venanciometal.com.br">
+                    contato@venanciometal.com.br
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <div class="text-align-right logo-binden">
+            <a href="">
+              <img src="./assets/img/binden.png" alt="" />
+            </a>
+          </div>
+        </div>
+      </footer>
+  
+      <div class="consent">
+        <div class="container">
+          <div class="sm-pd flex ai-c jc-sb ph-3 pv-3 gap-8 consent-content">
+            <div>
+              <p class="title-cookie">Política de Cookies</p>
+              <p class="description-cookie">
+                Em atendimento a LGPD - Lei Geral de Proteção de Dados Pessoais,
+                lei 13.709/2018, informamos que utilizamos cookies que armazenam
+                informações sobre a forma como você usa esse site. Para saber mais
+                a respeito, consulte a nossa página de
+                <a href="" class="btn-privacy"> Política de Privacidade. </a>
+              </p>
+            </div>
+            <a href="" class="link-privacy"> Política de Privacidade. </a>
+  
+            <button
+              type="button"
+              class="consent-button btn btn-primary text-nowrap"
+            >
+              Ok, estou de acordo.
+            </button>
+          </div>
+        </div>
   </body>
   <script>
     const btnTabs = document.querySelectorAll('.contact-tabs-buttons button');

@@ -35,6 +35,28 @@ body {
     font-size: 1.875rem;
   }
 }
+
+input,
+select,
+textarea {
+  height: 50px;
+  opacity: 0.502;
+  height: 52px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  border: 1px solid #ced4da;
+  width: 100%;
+}
+input {
+  padding: 20px;
+}
+textarea {
+  min-height: 250px;
+  resize: vertical;
+}
+select {
+  padding: 0px 20px;
+}
 /***************************** BUTTON ***********************************/
 
 .btn {
@@ -1499,4 +1521,63 @@ button.consent-button {
 .contact-tabs-buttons li button.active {
   border-color: #5a5e6d;
   box-shadow: 3px 0px 13.5px rgba(0, 0, 0, 0.1);
+}
+.container-institucional h2 {
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+  text-align: center;
+  color: var(--text-color);
+  font-weight: 900;
+}
+.container-institucional {
+  font-size: 1.125rem;
+  color: var(--text-color);
+  font-weight: 500;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.label-required {
+  font-size: 0.875rem;
+  color: var(--text-color);
+  font-weight: 700;
+  font-family: var(--secondary-font-family);
+}
+.label-required strong {
+  color: #ff0606;
+}
+.form-contact {
+  text-align: left;
+  max-width: 600px;
+  margin: auto;
+  padding-top: 40px;
+}
+
+.form-contact label {
+  opacity: 0.8;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: 700;
+  display: inline-block;
+  margin-bottom: 5px;
+  font-size: 1rem;
+}
+.form-contact label strong {
+  color: #ff0606;
+}
+.form-contact input {
+  margin-bottom: 25px;
+  flex: 1;
+}
+.form-contact select {
+  margin-bottom: 25px;
+}
+.form-contact a {
+  font-size: 0.75rem;
+  text-decoration: underline;
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: 700;
 }
