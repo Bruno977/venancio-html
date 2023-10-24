@@ -1638,14 +1638,17 @@ button.consent-button {
   color: var(--text-color);
   font-weight: 700;
 }
-.history p {
+.history p,
+.terms p {
   font-size: 1.125rem;
   color: var(--text-color);
   font-weight: 500;
 }
-.history p + p {
+.history p + p,
+.terms p + p {
   padding-top: 20px;
 }
+
 @media screen and (max-width: 1020px) {
   .venance-numbers {
     flex: 0 0 50%;
