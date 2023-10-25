@@ -1680,10 +1680,10 @@ button.consent-button {
   background-color: var(--primary-color);
   opacity: 0.2;
 }
-.menu-item-dropdown.terms.active .title-dropdown-terms span:before {
+.menu-item-dropdown-terms.active .title-dropdown-terms span:before {
   opacity: 1;
 }
-.title-dropdown {
+.title-dropdown-terms {
   font-size: 1.125rem;
   text-transform: uppercase;
   color: var(--text-color);
@@ -1692,7 +1692,7 @@ button.consent-button {
   padding: 40px;
   cursor: pointer;
 }
-.title-dropdown i {
+.title-dropdown-terms i {
   font-size: 2rem;
   transition: var(--transition);
 }
@@ -1711,7 +1711,7 @@ button.consent-button {
   color: var(--text-color);
   font-weight: 400;
 }
-.menu-item-dropdown.terms.active i {
+.menu-item-dropdown-terms.active i {
   transform: rotate(90deg);
 }
 @media screen and (max-width: 1020px) {

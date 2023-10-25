@@ -427,8 +427,8 @@
     </section>
 
     <section class="container pt-8 pv-10">
-      <div class="menu-item-dropdown terms">
-        <h4 class="title-dropdown title-dropdown-active title-dropdown-terms">
+      <div class="menu-item-dropdown-terms">
+        <h4 class="title-dropdown-terms-active title-dropdown-terms">
           <div class="flex ai-c gap-2">
             <span>1</span>
             30 meses de garantia
@@ -472,8 +472,8 @@
           </ul>
         </div>
       </div>
-      <div class="menu-item-dropdown terms">
-        <h4 class="title-dropdown title-dropdown-terms">
+      <div class="menu-item-dropdown-terms">
+        <h4 class="title-dropdown-terms">
           <div class="flex ai-c gap-2">
             <span>2</span>
             03 meses de garantia LEGAL
@@ -517,8 +517,8 @@
           </ul>
         </div>
       </div>
-      <div class="menu-item-dropdown terms">
-        <h4 class="title-dropdown title-dropdown-terms">
+      <div class="menu-item-dropdown-terms">
+        <h4 class="title-dropdown-terms">
           <div class="flex ai-c gap-2">
             <span>3</span>
             03 meses de garantia LEGAL, mais 03 meses de garantia contratual
@@ -562,8 +562,8 @@
           </ul>
         </div>
       </div>
-      <div class="menu-item-dropdown terms">
-        <h4 class="title-dropdown title-dropdown-terms">
+      <div class="menu-item-dropdown-terms">
+        <h4 class="title-dropdown-terms">
           <div class="flex ai-c gap-2">
             <span>4</span>
             03 meses de garantia legal, mais 09 meses de garantia contratual
@@ -857,8 +857,10 @@
     }
   </script>
   <script>
-    const menuTitle = document.querySelectorAll('.title-dropdown');
-    const dropdownActive = document.querySelector('.title-dropdown-active');
+    const menuTitle = document.querySelectorAll('.title-dropdown-terms');
+    const dropdownActive = document.querySelector(
+      '.title-dropdown-terms-active'
+    );
 
     if (menuTitle) {
       for (let i = 0; i < menuTitle.length; i++) {
@@ -867,7 +869,7 @@
         menu.addEventListener('click', (e) => {
           const menuItemDropdown = menu.nextElementSibling;
 
-          const containerMenu = e.target.closest('.menu-item-dropdown');
+          const containerMenu = e.target.closest('.menu-item-dropdown-terms');
           containerMenu.classList.toggle('active');
 
           if (containerMenu.classList.contains('active')) {
