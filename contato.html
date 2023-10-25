@@ -522,7 +522,147 @@
               </form>
             </div>
           </li>
-          <li class="tab-content">Assistência Técnica</li>
+          <li class="tab-content">
+            <div class="container-institucional">
+              <h2>Institucional .:. Assistência Técnica</h2>
+              <p class="label-required">
+                Campos marcados com <strong>*</strong> são de preenchimento
+                obrigatório.
+              </p>
+              <form class="form-contact">
+                <p class="subtitle-form">Dados do cliente</p>
+                <label for="name">Nome / Razão Social <strong>*</strong></label>
+                <input type="text" name="name" id="name" />
+
+                <div class="flex ai-c gap-2">
+                  <div class="flex-1">
+                    <label for="address">Endereço <strong>*</strong></label>
+                    <input type="text" name="address" id="address" />
+                  </div>
+                  <div class="flex-1">
+                    <label for="neighborhood">Bairro <strong>*</strong></label>
+                    <input type="text" name="neighborhood" id="neighborhood" />
+                  </div>
+                </div>
+
+                <div class="flex ai-c gap-2">
+                  <div class="flex-1">
+                    <label for="county">Município <strong>*</strong></label>
+                    <input type="text" name="county" id="county" />
+                  </div>
+                  <div class="flex ai-c flex-1 gap-2">
+                    <div style="flex: 2">
+                      <label for="cep">CEP <strong>*</strong></label>
+                      <input type="text" name="cep" id="cep" />
+                    </div>
+                    <div class="flex-1">
+                      <label for="uf">UF <strong>*</strong></label>
+                      <input type="text" name="uf" id="uf" />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex ai-c gap-2">
+                  <div class="flex-1">
+                    <label for="cpf-cnpj">CNPJ / CPF <strong>*</strong></label>
+                    <input type="text" name="cpf-cnpj" id="cpf-cnpj" />
+                  </div>
+                  <div class="flex-1">
+                    <label for="ie-rg"> IE / RG</label>
+                    <input type="text" name="ie-rg" id="ie-rg" />
+                  </div>
+                </div>
+
+                <div class="flex ai-c gap-2">
+                  <div class="flex-1">
+                    <label for="email">E-mail <strong>*</strong></label>
+                    <input type="email" name="email" id="email" />
+                  </div>
+                </div>
+
+                <div class="flex ai-c gap-2">
+                  <div class="flex-1">
+                    <label for="fone">Fone <strong>*</strong></label>
+                    <input type="text" name="fone" id="fone" />
+                  </div>
+                  <div class="flex-1">
+                    <label for="fone">Fone <strong>*</strong></label>
+                    <input type="text" name="fone" id="fone" />
+                  </div>
+                </div>
+
+                <p class="subtitle-form">Dados do Equipamento</p>
+
+                <label for="model">Modelo <strong>*</strong></label>
+                <input type="text" name="model" id="model" />
+
+                <div class="flex ai-c gap-2">
+                  <div class="flex-1">
+                    <label for="equipment">Equipamento</label>
+                    <input type="text" name="equipment" id="equipment" />
+                  </div>
+                  <div class="flex-1">
+                    <label for="serial-number"
+                      >Número Série <strong>*</strong></label
+                    >
+                    <input
+                      type="text"
+                      name="serial-number"
+                      id="serial-number"
+                    />
+                  </div>
+                </div>
+
+                <div class="flex ai-c gap-2">
+                  <div class="flex-1">
+                    <label for="shopkeeper">Lojista</label>
+                    <input type="text" name="shopkeeper" id="shopkeeper" />
+                  </div>
+                  <div class="flex-1">
+                    <label for="county">Município</label>
+                    <input type="text" name="county" id="county" />
+                  </div>
+                </div>
+
+                <div class="flex ai-c gap-2">
+                  <div class="flex-1">
+                    <label for="number-nfe">Número NFe<strong>*</strong></label>
+                    <input type="text" name="number-nfe" id="number-nfe" />
+                  </div>
+                  <div class="flex-1">
+                    <label for="acquisition-date"
+                      >Data Aquisição<strong>*</strong></label
+                    >
+
+                    <input
+                      type="text"
+                      name="acquisition-date"
+                      id="acquisition-date"
+                    />
+                  </div>
+                </div>
+
+                <p class="subtitle-form">Problema Apresentado</p>
+
+                <label for="photos">Descrição <strong>*</strong></label>
+                <textarea
+                  name="description"
+                  id="description"
+                  cols="30"
+                  rows="10"
+                ></textarea>
+
+                <label for="photos"
+                  >Anexar NFe / Fotos <strong>*</strong></label
+                >
+                <input type="file" name="photos" id="photos" />
+
+                <div class="text-align-right mt-4">
+                  <button type="submit" class="btn btn-primary">Enviar</button>
+                </div>
+              </form>
+            </div>
+          </li>
           <li class="tab-content">
             <div class="container-institucional">
               <h2>Institucional .:. Novos Postos Autorizados</h2>
