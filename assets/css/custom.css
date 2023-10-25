@@ -51,7 +51,7 @@ body {
   }
 }
 
-input,
+input:not(input[type='file']),
 select,
 textarea {
   height: 50px;
@@ -62,7 +62,10 @@ textarea {
   border: 1px solid #ced4da;
   width: 100%;
 }
-input {
+input[type='file'] {
+  width: 100%;
+}
+input:not(input[type='file']) {
   padding: 20px;
 }
 textarea {
