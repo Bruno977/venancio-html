@@ -728,6 +728,10 @@ header .menu > li:hover > a i {
   margin-top: 20px;
   color: var(--text-color);
 }
+.blog-item img {
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
 /***************************** NEWSLETTER ***********************************/
 .newsletter {
   padding-top: 40px;
