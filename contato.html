@@ -10,6 +10,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./assets/css/fontawesome.css" />
+    <link rel="stylesheet" href="./assets/css/swiper.css" />
     <link rel="stylesheet" href="./assets/css/main.css" />
     <link rel="stylesheet" href="./assets/css/custom.css" />
     <title>Contato</title>
@@ -393,66 +394,91 @@
       />
     </section>
 
-    <div class="container bg-primary" style="position: relative; top: -100px">
-      <div class="title-contact-container">
-        <div class="flex ai-c jc-c gap-10">
-          <div class="flex-1">
-            <h1>Central de atendimento</h1>
-          </div>
-          <div class="title-help">
-            <h6 class="pb-1">Como Podemos te Ajudar?</h6>
-            <p>
-              Caro cliente, você pode tirar suas dúvidas muito rapidamente
-              acessando nossa central de <a href="">Perguntas Frequentes.</a>
-            </p>
-            <p>
-              Nos casos de Assistência Técnica, para agilizar o seu atendimento,
-              <a href="">Clique Aqui.</a>
-            </p>
+    <section class="hide-desktop">
+      <a href="">
+        <img
+          src="./assets/img/main-banner-mobile-product.png"
+          alt=""
+          class="w-100 h-100 object-cover"
+        />
+      </a>
+    </section>
+
+    <div class="container container-central">
+      <div class="bg-primary">
+        <div class="title-contact-container">
+          <div class="flex ai-c jc-c gap-10">
+            <div class="flex-1">
+              <h1>Central de atendimento</h1>
+            </div>
+            <div class="title-help">
+              <h6 class="pb-1">Como Podemos te Ajudar?</h6>
+              <p>
+                Caro cliente, você pode tirar suas dúvidas muito rapidamente
+                acessando nossa central de <a href="">Perguntas Frequentes.</a>
+              </p>
+              <p>
+                Nos casos de Assistência Técnica, para agilizar o seu
+                atendimento,
+                <a href="">Clique Aqui.</a>
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
     <section class="container contact-tabs-description">
-      <ul class="contact-tabs-buttons mb-8">
-        <li>
-          <button type="button" class="active">
-            <i class="fa-solid fa-envelope fa-4x"></i>
-            Contato
-          </button>
-        </li>
-        <li>
-          <button type="button">
-            <i class="fa-solid fa-screwdriver-wrench fa-4x"></i>
-            Assistência Técnica
-          </button>
-        </li>
-        <li>
-          <button type="button">
-            <i class="fa-solid fa-user-plus fa-4x"></i>
-            Cadastro Novos Postos Autorizados
-          </button>
-        </li>
-        <li>
-          <button type="button">
-            <i class="fa-solid fa-user-group fa-4x"></i>
-            Trabalhe na Venâncio
-          </button>
-        </li>
-        <li>
-          <button type="button">
-            <i class="fa-solid fa-comments fa-4x"></i>
-            Perguntas Frequentes
-          </button>
-        </li>
-        <li>
-          <button type="button">
-            <i class="fa-regular fa-images fa-4x"></i>
-            Catálogo Virtual
-          </button>
-        </li>
-      </ul>
+      <div class="swiper-padding">
+        <div class="swiper swiper-tabs">
+          <ul class="swiper-wrapper contact-tabs-buttons mb-8">
+            <li class="swiper-slide">
+              <button type="button" class="active">
+                <i class="fa-solid fa-envelope fa-4x"></i>
+                Contato
+              </button>
+            </li>
+            <li class="swiper-slide">
+              <button type="button">
+                <i class="fa-solid fa-screwdriver-wrench fa-4x"></i>
+                Assistência Técnica
+              </button>
+            </li>
+            <li class="swiper-slide">
+              <button type="button">
+                <i class="fa-solid fa-user-plus fa-4x"></i>
+                Cadastro Novos Postos Autorizados
+              </button>
+            </li>
+            <li class="swiper-slide">
+              <button type="button">
+                <i class="fa-solid fa-user-group fa-4x"></i>
+                Trabalhe na Venâncio
+              </button>
+            </li>
+            <li class="swiper-slide">
+              <button type="button">
+                <i class="fa-solid fa-comments fa-4x"></i>
+                Perguntas Frequentes
+              </button>
+            </li>
+            <li class="swiper-slide">
+              <button type="button">
+                <i class="fa-regular fa-images fa-4x"></i>
+                Catálogo Virtual
+              </button>
+            </li>
+          </ul>
+          <div class="container container-arrows">
+            <div class="swiper-button-prev">
+              <i class="fa-solid fa-chevron-left"></i>
+            </div>
+            <div class="swiper-button-next">
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="container pb-8">
         <ul class="content-tabs">
           <li class="tab-content active">
@@ -471,12 +497,12 @@
                 <input type="text" name="name" id="name" />
                 <label for="email">E-mail <strong>*</strong></label>
                 <input type="email" name="email" id="email" />
-                <div class="flex ai-c gap-2">
-                  <div class="flex-1">
+                <div class="flex ai-c flex-col-mobile gap-2">
+                  <div class="flex-1 w-full-mobile">
                     <label for="phone">Telefone <strong>*</strong></label>
                     <input type="text" name="phone" id="phone" />
                   </div>
-                  <div class="flex-1">
+                  <div class="flex-1 w-full-mobile">
                     <label for="cellphone">CELULAR *:</label>
                     <input type="text" name="cellphone" id="cellphone" />
                   </div>
@@ -493,12 +519,12 @@
                 <label for="address">ENDEREÇO <strong>*</strong></label>
                 <input type="text" name="address" id="address" />
 
-                <div class="flex ai-fs gap-2">
-                  <div class="flex-1">
+                <div class="flex ai-fs flex-col-mobile gap-2">
+                  <div class="flex-1 w-full-mobile">
                     <label for="city">CIDADE <strong>*</strong></label>
                     <input type="text" name="city" id="city" />
                   </div>
-                  <div class="flex-1">
+                  <div class="flex-1 w-full-mobile">
                     <label for="state">ESTADO <strong>*</strong></label>
                     <select name="state" id="state">
                       <option value="">RJ</option>
@@ -534,40 +560,42 @@
                 <label for="name">Nome / Razão Social <strong>*</strong></label>
                 <input type="text" name="name" id="name" />
 
-                <div class="flex ai-c gap-2">
-                  <div class="flex-1">
+                <div class="flex ai-c flex-col-mobile gap-2">
+                  <div class="flex-1 w-full-mobile">
                     <label for="address">Endereço <strong>*</strong></label>
                     <input type="text" name="address" id="address" />
                   </div>
-                  <div class="flex-1">
+                  <div class="flex-1 w-full-mobile">
                     <label for="neighborhood">Bairro <strong>*</strong></label>
                     <input type="text" name="neighborhood" id="neighborhood" />
                   </div>
                 </div>
 
-                <div class="flex ai-c gap-2">
-                  <div class="flex-1">
+                <div class="flex ai-c flex-col-mobile gap-2">
+                  <div class="flex-1 w-full-mobile">
                     <label for="county">Município <strong>*</strong></label>
                     <input type="text" name="county" id="county" />
                   </div>
-                  <div class="flex ai-c flex-1 gap-2">
-                    <div style="flex: 2">
+                  <div
+                    class="flex ai-c flex-1 gap-2 flex-col-mobile w-full-mobile"
+                  >
+                    <div class="w-full-mobile" style="flex: 2">
                       <label for="cep">CEP <strong>*</strong></label>
                       <input type="text" name="cep" id="cep" />
                     </div>
-                    <div class="flex-1">
+                    <div class="flex-1 w-full-mobile">
                       <label for="uf">UF <strong>*</strong></label>
                       <input type="text" name="uf" id="uf" />
                     </div>
                   </div>
                 </div>
 
-                <div class="flex ai-c gap-2">
-                  <div class="flex-1">
+                <div class="flex ai-c gap-2 flex-col-mobile">
+                  <div class="flex-1 w-full-mobile">
                     <label for="cpf-cnpj">CNPJ / CPF <strong>*</strong></label>
                     <input type="text" name="cpf-cnpj" id="cpf-cnpj" />
                   </div>
-                  <div class="flex-1">
+                  <div class="flex-1 w-full-mobile">
                     <label for="ie-rg"> IE / RG</label>
                     <input type="text" name="ie-rg" id="ie-rg" />
                   </div>
@@ -680,12 +708,12 @@
                 >
                 <input type="text" name="fantasy-name" id="fantasy-name" />
 
-                <div class="flex ai-c gap-2">
-                  <div class="flex-1">
+                <div class="flex ai-c gap-2 flex-col-mobile">
+                  <div class="flex-1 w-full-mobile">
                     <label for="cnpj">Cnpj <strong>*</strong></label>
                     <input type="text" name="cnpj" id="cnpj" />
                   </div>
-                  <div class="flex-1">
+                  <div class="flex-1 w-full-mobile">
                     <label for="state-registration">Inscrição Estadual</label>
                     <input
                       type="text"
@@ -695,13 +723,15 @@
                   </div>
                 </div>
 
-                <div class="flex ai-c gap-2">
-                  <div class="flex-1">
+                <div class="flex ai-c gap-2 flex-col-mobile">
+                  <div class="flex-1 w-full-mobile">
                     <label for="address">Endereço <strong>*</strong></label>
                     <input type="text" name="address" id="address" />
                   </div>
-                  <div class="flex ai-c flex-1 gap-2">
-                    <div style="flex: 2">
+                  <div
+                    class="flex ai-c flex-1 gap-2 flex-col-mobile w-full-mobile"
+                  >
+                    <div class="w-full-mobile" style="flex: 2">
                       <label for="neighborhood"
                         >Bairro <strong>*</strong></label
                       >
@@ -711,24 +741,26 @@
                         id="neighborhood"
                       />
                     </div>
-                    <div class="flex-1">
+                    <div class="w-full-mobile flex-1">
                       <label for="number">Número <strong>*</strong></label>
                       <input type="text" name="number" id="number" />
                     </div>
                   </div>
                 </div>
 
-                <div class="flex ai-c gap-2">
-                  <div class="flex-1">
+                <div class="flex ai-c gap-2 flex-col-mobile">
+                  <div class="flex-1 w-full-mobile">
                     <label for="city">Cidade <strong>*</strong></label>
                     <input type="text" name="city" id="city" />
                   </div>
-                  <div class="flex ai-c flex-1 gap-2">
-                    <div style="flex: 2">
+                  <div
+                    class="flex ai-c flex-1 gap-2 flex-col-mobile w-full-mobile"
+                  >
+                    <div class="w-full-mobile" style="flex: 2">
                       <label for="cep">CEP <strong>*</strong></label>
                       <input type="text" name="cep" id="cep" />
                     </div>
-                    <div class="flex-1">
+                    <div class="flex-1 w-full-mobile">
                       <label for="uf">UF <strong>*</strong></label>
                       <input type="text" name="uf" id="uf" />
                     </div>
@@ -822,7 +854,6 @@
                 </div>
               </form>
             </div>
-            wq
           </li>
         </ul>
       </div>
@@ -1057,6 +1088,7 @@
       </div>
     </div>
   </body>
+  <script src="./assets/js/swiper.js"></script>
   <script>
     const btnTabs = document.querySelectorAll('.contact-tabs-buttons button');
     const allTabs = document.querySelectorAll('.content-tabs li');
@@ -1074,5 +1106,24 @@
         });
       });
     }
+  </script>
+  <script>
+    const swiperFeatured = new Swiper('.swiper-tabs', {
+      breakpoints: {
+        300: {
+          slidesPerView: 2,
+          // spaceBetween: 20,
+        },
+        1020: {
+          slidesPerView: 6,
+          // spaceBetween: 20,
+        },
+      },
+
+      navigation: {
+        nextEl: '.swiper-tabs .swiper-button-next',
+        prevEl: '.swiper-tabs .swiper-button-prev',
+      },
+    });
   </script>
 </html>

@@ -1543,10 +1543,10 @@ button.consent-button {
   margin-top: 20px;
 }
 .contact-tabs-buttons {
-  display: flex;
+  /* display: flex;
   align-items: center;
   justify-content: center;
-  gap: 30px;
+  gap: 30px; */
 }
 .contact-tabs-buttons li button {
   background-color: transparent;
@@ -1628,6 +1628,10 @@ button.consent-button {
   color: #000000;
   font-weight: 700;
 }
+.container-central {
+  position: relative;
+  top: -100px;
+}
 @media screen and (max-width: 1020px) {
   .container-institucional h2 {
     font-size: 1.5rem;
@@ -1639,6 +1643,67 @@ button.consent-button {
   .container-institucional {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
+  }
+  .contact-tabs-buttons li button {
+    width: 126px;
+    height: 126px;
+    margin: auto;
+    color: #b6bdcd;
+    padding: 20px 0px;
+    font-size: 0.7rem;
+    font-weight: 900;
+  }
+  .contact-tabs-buttons li button i {
+    font-size: 3em;
+  }
+  .contact-tabs-buttons li button.active i,
+  .contact-tabs-buttons li button.active {
+    color: var(--text-color);
+  }
+  .title-contact-container > div {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .title-contact-container h1 {
+    font-size: 1.875rem;
+  }
+  .title-contact-container h6 {
+    display: none;
+  }
+  .title-contact-container:after {
+    left: 25px;
+    top: -60px;
+  }
+  .title-contact-container {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+  .container-central {
+    top: -15px;
+    padding-bottom: 40px;
+  }
+  .swiper-padding {
+    padding-left: 30px;
+    padding-right: 30px;
+    position: relative;
+  }
+  .swiper-padding .swiper-tabs {
+    position: unset;
+  }
+  .swiper-tabs .swiper-button-prev {
+    left: 0;
+  }
+  .swiper-tabs .swiper-button-next {
+    right: 0;
+  }
+  .swiper-tabs .swiper-button-prev i,
+  .swiper-tabs .swiper-button-next i {
+    font-size: 1.5rem;
+  }
+  .tab-content .container-institucional,
+  .contact-tabs-description > div.container {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 /***************************** INSTITUCIONAl ***********************************/
