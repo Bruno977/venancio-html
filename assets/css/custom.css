@@ -1761,6 +1761,7 @@ button.consent-button {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 20px;
   position: relative;
 }
 .title-dropdown-terms span {
@@ -1774,6 +1775,7 @@ button.consent-button {
   line-height: 0.875rem;
   color: #ffffff;
   font-weight: 900;
+  flex-shrink: 0;
 
   display: flex;
   align-items: center;
@@ -1827,6 +1829,13 @@ button.consent-button {
 @media screen and (max-width: 1020px) {
   .venance-numbers {
     flex: 0 0 50%;
+  }
+  .title-dropdown-terms {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .title-dropdown-terms span:before {
+    left: 0;
   }
   .container-venance-numbers {
     /* flex-wrap: wrap; */
