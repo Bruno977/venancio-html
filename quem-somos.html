@@ -392,8 +392,17 @@
         class="w-100 object-cover h-100"
       />
     </section>
+    <section class="hide-desktop">
+      <a href="">
+        <img
+          src="./assets/img/main-banner-mobile-product.png"
+          alt=""
+          class="w-100 h-100 object-cover"
+        />
+      </a>
+    </section>
 
-    <section class="container pv-8">
+    <section class="container pv-8 ov-h institucional">
       <div class="container-institucional">
         <h2>Institucional .:. Conheça a Venâncio</h2>
         <p>
@@ -402,51 +411,55 @@
         </p>
       </div>
       <h2 class="title-secondary mt-8 mb-6">Venâncio em Números:</h2>
-      <div class="flex ai-fs jc-sb container-venance-numbers">
-        <div class="venance-numbers">
-          <i class="fa-solid fa-users fa-3x"></i>
-          <div>
-            <strong>+ de 1.000 </strong>
-            <p>funcionários</p>
+      
+        <div class="flex ai-fs jc-sb container-venance-numbers">
+          <div class="venance-numbers">
+            <i class="fa-solid fa-users fa-3x"></i>
+            <div>
+              <strong>+ de 1.000 </strong>
+              <p>funcionários</p>
+            </div>
           </div>
-        </div>
-        <div class="venance-numbers">
-          <i class="fa-solid fa-chart-area fa-3x"></i>
-          <div>
-            <strong>110.000 m²</strong>
-            <p>parque fabril</p>
+          <div class="venance-numbers">
+            <i class="fa-solid fa-chart-area fa-3x"></i>
+            <div>
+              <strong>110.000 m²</strong>
+              <p>parque fabril</p>
+            </div>
           </div>
-        </div>
-        <div class="venance-numbers">
-          <i class="fa-solid fa-building fa-3x"></i>
-          <div>
-            <strong>27.000 m²</strong>
-            <p>área construída</p>
+          <div class="venance-numbers">
+            <i class="fa-solid fa-building fa-3x"></i>
+            <div>
+              <strong>27.000 m²</strong>
+              <p>área construída</p>
+            </div>
           </div>
-        </div>
-
-        <div class="venance-numbers">
-          <i class="fa-solid fa-weight-hanging fa-3x"></i>
-          <div>
-            <strong>400 toneladas/mês</strong>
-            <p>capacidade de fundição com fundição própria</p>
+  
+          <div class="venance-numbers">
+            <i class="fa-solid fa-weight-hanging fa-3x"></i>
+            <div>
+              <strong>400 toneladas/mês</strong>
+              <p>capacidade de fundição com fundição própria</p>
+            </div>
           </div>
-        </div>
-        <div class="venance-numbers">
-          <i class="fa-solid fa-dolly fa-3x"></i>
-          <div>
-            <strong>200.000 produtos/ano</strong>
-            <p>produção média</p>
+          <div class="venance-numbers">
+            <i class="fa-solid fa-dolly fa-3x"></i>
+            <div>
+              <strong>200.000 produtos/ano</strong>
+              <p>produção média</p>
+            </div>
           </div>
-        </div>
+        
       </div>
     </section>
 
     <section class="container">
       <div class="columns md-gap">
-        <div class="col-md-6 col-sm-12 who-we-are">
-          <h4 class="title-carrosel">INSTITUCIONAL</h4>
-          <h6 class="subtitle-video mb-4">QUEM SOMOS</h4>
+        <div class="col-md-6 col-sm-12 who-we-are order-2 lg-order-1">
+          <div class="hide block-lg">
+            <h4 class="title-carrosel">INSTITUCIONAL</h4>
+            <h6 class="subtitle-video mb-4">QUEM SOMOS</h4>
+          </div>
           <p>
             Buscando sempre oferecer o melhor ao consumidor, a Venâncio
             constantemente investe em novas e tecnológicas máquinas, que
@@ -474,7 +487,11 @@
             valorizado a comunidade onde se insere, bem como o ambiente.
           </p>
         </div>
-        <div class="col-md-6 col-sm-12">
+        <div class="col-md-6 col-sm-12  order-1 lg-order-2">
+          <div class="hide-lg">
+            <h4 class="title-carrosel">INSTITUCIONAL</h4>
+            <h6 class="subtitle-video mb-4">QUEM SOMOS</h4>
+          </div>
           <div class="video-container">
             <iframe
               src="https://www.youtube.com/embed/_2c8YZwzaMk?si=xPW7KW2GgDEIkbAf"
@@ -491,7 +508,7 @@
     <section class="bg-history mv-8">
       <div class="container pv-8 history">
         <div class="columns md-gap">
-          <div class="col-md-6 col-sm-12">
+          <div class="col-md-6 col-sm-12 order-2 lg-order-1">
             <h4 class="mb-2">Um pouco de história</h4>
             <p>
               Fundada em 06 de fevereiro de 1991, a empresa sempre buscou ter a
@@ -514,16 +531,16 @@
               especializada Cozinha Profissional.
             </p>
           </div>
-          <div class="col-md-6 col-sm-12 as-c text-align-center">
+          <div class="col-md-6 col-sm-12 as-c text-align-center order-1 lg-order-2">
             <img src="./assets/img/banner-history.png" alt="" />
           </div>
         </div>
       </div>
     </section>
 
-    <section class="container hide-mobile pb-8">
+    <section class="container container-blog pb-8 ov-h">
       <h4 class="title-carrosel mb-2">Blog</h4>
-      <div class="columns sm-gap">
+      <div class="columns sm-gap columns-blog">
         <div class="col-md-3 col-sm-12 blog-item">
           <img src="./assets/img/spot.png" alt="" />
           <a href="" class="title-blog"
@@ -576,9 +593,9 @@
           </p>
           <a href="">Ler mais no blog »</a>
         </div>
-        <div class="col-md-12 col-sm-12 text-align-center">
-          <a href="" class="btn btn-primary btn-posts">Ver Mais Posts</a>
-        </div>
+      </div>
+      <div class="text-align-center">
+        <a href="" class="btn btn-primary btn-posts">Ver Mais Posts</a>
       </div>
     </section>
 

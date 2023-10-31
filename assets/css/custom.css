@@ -732,6 +732,25 @@ header .menu > li:hover > a i {
   aspect-ratio: 1/1;
   object-fit: cover;
 }
+
+@media screen and (max-width: 1020px) {
+  .columns-blog {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+  .columns-blog .blog-item {
+    flex: 0 0 60%;
+  }
+  .container-blog .title-carrosel {
+    padding-left: 1.25rem;
+  }
+  .container-blog {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
 /***************************** NEWSLETTER ***********************************/
 .newsletter {
   padding-top: 40px;
@@ -1609,7 +1628,19 @@ button.consent-button {
   color: #000000;
   font-weight: 700;
 }
-
+@media screen and (max-width: 1020px) {
+  .container-institucional h2 {
+    font-size: 1.5rem;
+  }
+  .container.institucional {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .container-institucional {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+}
 /***************************** INSTITUCIONAl ***********************************/
 .container-venance-numbers {
   overflow-x: auto;
