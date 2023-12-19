@@ -1864,10 +1864,7 @@ button.consent-button {
 .card-differences:hover p {
   color: #fff;
 }
-.container.where-to-buy {
-  border-top: 1px solid #d7d6d7;
-  border-bottom: 1px solid #d7d6d7;
-}
+
 .location-store img {
   width: 100%;
   object-fit: cover;
@@ -2504,14 +2501,14 @@ button.consent-button {
 }
 
 /* login */
-.banner-login a {
+.banner-lp a {
   display: block;
   position: relative;
 }
-.banner-login img {
+.banner-lp img {
   height: 260px;
 }
-.banner-login .content {
+.banner-lp .content {
   position: absolute;
   inset: 0;
   display: flex;
@@ -2520,7 +2517,7 @@ button.consent-button {
   flex-direction: column;
   gap: 20px;
 }
-.banner-login .content h2 {
+.banner-lp .content h2 {
   font-size: 2.5rem;
   letter-spacing: 1px;
   color: #ffffff;
@@ -2528,7 +2525,7 @@ button.consent-button {
 
   text-align: center;
 }
-.banner-login .content p {
+.banner-lp .content p {
   font-size: 1.125rem;
   color: #ffffff;
   font-weight: 500;
@@ -2559,10 +2556,13 @@ button.consent-button {
   margin: 0 auto;
 }
 @media screen and (max-width: 1024px) {
-  .banner-login .content h2 {
+  .banner-lp .content h2 {
     font-size: 1.5rem;
   }
-  .banner-login .content p {
+  .banner-lp .content p {
     font-size: 1rem;
   }
+}
+
+.where-to-buy .title {
 }

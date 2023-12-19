@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./assets/css/fontawesome.css" />
     <link rel="stylesheet" href="./assets/css/main.css" />
     <link rel="stylesheet" href="./assets/css/custom.css" />
-    <title>Login</title>
+    <title>Cadastros</title>
   </head>
   <body>
     <header class="border">
@@ -379,9 +379,7 @@
       <div class="breadcrumbs" style="margin-bottom: 0">
         <a href="">Home</a>
         <span>»</span>
-        <a href="">Institucional</a>
-        <span>»</span>
-        <a href="/quem-somos.html">Quem Somos</a>
+        <a href="/cadastros.html">Cadastros</a>
       </div>
     </div>
 
@@ -421,91 +419,402 @@
       </a>
     </section>
 
-    <section class="container pv-8">
-      <div class="container-institucional pb-10">
-        <h2>Área do Cliente <span class="text-primary">.:.</span> Login</h2>
-        <p>
-          Área de acesso restrito a usuários cadastrados. <br />Para realizar
-          downloads, efetue seu cadastro e aguarde o recebimento de seu login e
-          senha.
-        </p>
-      </div>
-      <div class="container-login">
-        <div class="columns md-gap">
-          <div class="col-md-5 col-sm-12">
-            <h4 class="title-login">
-              <span>|</span> Já sou cadastrado <span>|</span>
-            </h4>
-            <form class="form-item">
-              <label for="email">E-mail <strong>*</strong></label>
-              <input type="email" name="email" id="email" />
-
-              <label for="password">Senha <strong>*</strong></label>
-              <input type="password" name="password" id="password" />
-
-              <div class="text-align-right mt-4">
-                <button
-                  type="submit"
-                  class="btn btn-primary"
-                  style="font-size: 0.875rem"
-                >
-                  Entrar
-                </button>
-              </div>
-            </form>
-          </div>
-          <div class="col-md-2 col-sm-12 hide-mobile">
-            <div class="divider"></div>
-          </div>
-          <div class="col-md-5 col-sm-12">
-            <h4 class="title-login">
-              <span>|</span> Ainda não sou cadastrado <span>|</span>
-            </h4>
-            <form class="form-item">
-              <label for="email">E-mail <strong>*</strong></label>
-              <input type="email" name="email" id="email" />
-
-              <label for="country">País <strong>*</strong></label>
-              <select name="country" id="country"></select>
-
-              <div class="text-align-right mt-4">
-                <button
-                  type="submit"
-                  class="btn btn-primary"
-                  style="font-size: 0.875rem"
-                >
-                  Continuar
-                </button>
-              </div>
-            </form>
-          </div>
+    <section class="container contact-tabs-description">
+      <div class="swiper-padding">
+        <div class="swiper swiper-tabs">
+          <ul class="swiper-wrapper contact-tabs-buttons mb-8">
+            <li class="swiper-slide">
+              <button type="button" class="active">
+                <i class="fa-solid fa-envelope fa-4x"></i>
+                Pessoa Jurídica
+              </button>
+            </li>
+            <li class="swiper-slide">
+              <button type="button" class="active">
+                <i class="fa-solid fa-envelope fa-4x"></i>
+                Pessoa Física
+              </button>
+            </li>
+          </ul>
         </div>
       </div>
-    </section>
+      <div class="container pb-8">
+        <ul class="content-tabs">
+          <li class="tab-content active">
+            <div class="container-institucional">
+              <h2>Institucional .:. Contato</h2>
+              <p>
+                Para entrar em contato com a Venâncio, preencha o formulário
+                abaixo, selecione o departamento e clique em enviar.
+              </p>
+              <p class="label-required">
+                Campos marcados com <strong>*</strong> são de preenchimento
+                obrigatório.
+              </p>
+              <form class="form-contact">
+                <label for="name">Nome <strong>*</strong></label>
+                <input type="text" name="name" id="name" />
+                <label for="email">E-mail <strong>*</strong></label>
+                <input type="email" name="email" id="email" />
+                <div class="flex ai-c flex-col-mobile gap-2">
+                  <div class="flex-1 w-full-mobile">
+                    <label for="phone">Telefone <strong>*</strong></label>
+                    <input type="text" name="phone" id="phone" />
+                  </div>
+                  <div class="flex-1 w-full-mobile">
+                    <label for="cellphone">CELULAR *:</label>
+                    <input type="text" name="cellphone" id="cellphone" />
+                  </div>
+                </div>
+                <div class="flex ai-c gap-2">
+                  <div class="flex-1">
+                    <label for="cep">CEP <strong>*</strong></label>
+                    <input type="text" name="cep" id="cep" />
+                  </div>
+                  <div class="flex-1">
+                    <a href="">Não sei o cep</a>
+                  </div>
+                </div>
+                <label for="address">ENDEREÇO <strong>*</strong></label>
+                <input type="text" name="address" id="address" />
 
-    <section class="newsletter hide-mobile">
-      <div class="container">
-        <div class="columns sm-gap ai-c">
-          <div class="col-md-4 col-sm-12">
-            <div class="flex ai-fs gap-3">
-              <i class="fa-regular fa-envelope fa-4x"></i>
-              <div class="title-newsletter">
-                <h2>Deseja receber nossas novidades exclusivas?</h2>
-                <p>
-                  Cadastre seu e-mail e receba informações periódicas da
-                  Venâncio.
-                </p>
-              </div>
+                <div class="flex ai-fs flex-col-mobile gap-2">
+                  <div class="flex-1 w-full-mobile">
+                    <label for="city">CIDADE <strong>*</strong></label>
+                    <input type="text" name="city" id="city" />
+                  </div>
+                  <div class="flex-1 w-full-mobile">
+                    <label for="state">ESTADO <strong>*</strong></label>
+                    <select name="state" id="state">
+                      <option value="">RJ</option>
+                    </select>
+                  </div>
+                </div>
+                <label for="city">Departamento <strong>*</strong></label>
+                <select name="department" id="department">
+                  <option value=""></option>
+                </select>
+                <label for="message">MENSAGEM <strong>*</strong></label>
+                <textarea
+                  name="message"
+                  id="message"
+                  cols="30"
+                  rows="10"
+                ></textarea>
+                <div class="text-align-right mt-4">
+                  <button type="submit" class="btn btn-primary">Enviar</button>
+                </div>
+              </form>
             </div>
-          </div>
-          <div class="col-md-8 col-sm-12">
-            <form class="flex ai-c gap-2 form-newsletter">
-              <input type="text" name="name" id="name" placeholder="Nome" />
-              <input type="email" name="email" id="email" placeholder="Email" />
-              <button type="submit" class="btn-newsletter">Cadastrar</button>
-            </form>
-          </div>
-        </div>
+          </li>
+          <li class="tab-content">
+            <div class="container-institucional">
+              <h2>Institucional .:. Assistência Técnica</h2>
+              <p class="label-required">
+                Campos marcados com <strong>*</strong> são de preenchimento
+                obrigatório.
+              </p>
+              <form class="form-contact">
+                <p class="subtitle-form">Dados do cliente</p>
+                <label for="name">Nome / Razão Social <strong>*</strong></label>
+                <input type="text" name="name" id="name" />
+
+                <div class="flex ai-c flex-col-mobile gap-2">
+                  <div class="flex-1 w-full-mobile">
+                    <label for="address">Endereço <strong>*</strong></label>
+                    <input type="text" name="address" id="address" />
+                  </div>
+                  <div class="flex-1 w-full-mobile">
+                    <label for="neighborhood">Bairro <strong>*</strong></label>
+                    <input type="text" name="neighborhood" id="neighborhood" />
+                  </div>
+                </div>
+
+                <div class="flex ai-c flex-col-mobile gap-2">
+                  <div class="flex-1 w-full-mobile">
+                    <label for="county">Município <strong>*</strong></label>
+                    <input type="text" name="county" id="county" />
+                  </div>
+                  <div
+                    class="flex ai-c flex-1 gap-2 flex-col-mobile w-full-mobile"
+                  >
+                    <div class="w-full-mobile" style="flex: 2">
+                      <label for="cep">CEP <strong>*</strong></label>
+                      <input type="text" name="cep" id="cep" />
+                    </div>
+                    <div class="flex-1 w-full-mobile">
+                      <label for="uf">UF <strong>*</strong></label>
+                      <input type="text" name="uf" id="uf" />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex ai-c gap-2 flex-col-mobile">
+                  <div class="flex-1 w-full-mobile">
+                    <label for="cpf-cnpj">CNPJ / CPF <strong>*</strong></label>
+                    <input type="text" name="cpf-cnpj" id="cpf-cnpj" />
+                  </div>
+                  <div class="flex-1 w-full-mobile">
+                    <label for="ie-rg"> IE / RG</label>
+                    <input type="text" name="ie-rg" id="ie-rg" />
+                  </div>
+                </div>
+
+                <div class="flex ai-c gap-2">
+                  <div class="flex-1">
+                    <label for="email">E-mail <strong>*</strong></label>
+                    <input type="email" name="email" id="email" />
+                  </div>
+                </div>
+
+                <div class="flex ai-c gap-2">
+                  <div class="flex-1">
+                    <label for="fone">Fone <strong>*</strong></label>
+                    <input type="text" name="fone" id="fone" />
+                  </div>
+                  <div class="flex-1">
+                    <label for="fone">Fone <strong>*</strong></label>
+                    <input type="text" name="fone" id="fone" />
+                  </div>
+                </div>
+
+                <p class="subtitle-form">Dados do Equipamento</p>
+
+                <label for="model">Modelo <strong>*</strong></label>
+                <input type="text" name="model" id="model" />
+
+                <div class="flex ai-c gap-2">
+                  <div class="flex-1">
+                    <label for="equipment">Equipamento</label>
+                    <input type="text" name="equipment" id="equipment" />
+                  </div>
+                  <div class="flex-1">
+                    <label for="serial-number"
+                      >Número Série <strong>*</strong></label
+                    >
+                    <input
+                      type="text"
+                      name="serial-number"
+                      id="serial-number"
+                    />
+                  </div>
+                </div>
+
+                <div class="flex ai-c gap-2">
+                  <div class="flex-1">
+                    <label for="shopkeeper">Lojista</label>
+                    <input type="text" name="shopkeeper" id="shopkeeper" />
+                  </div>
+                  <div class="flex-1">
+                    <label for="county">Município</label>
+                    <input type="text" name="county" id="county" />
+                  </div>
+                </div>
+
+                <div class="flex ai-c gap-2">
+                  <div class="flex-1">
+                    <label for="number-nfe">Número NFe<strong>*</strong></label>
+                    <input type="text" name="number-nfe" id="number-nfe" />
+                  </div>
+                  <div class="flex-1">
+                    <label for="acquisition-date"
+                      >Data Aquisição<strong>*</strong></label
+                    >
+
+                    <input
+                      type="text"
+                      name="acquisition-date"
+                      id="acquisition-date"
+                    />
+                  </div>
+                </div>
+
+                <p class="subtitle-form">Problema Apresentado</p>
+
+                <label for="photos">Descrição <strong>*</strong></label>
+                <textarea
+                  name="description"
+                  id="description"
+                  cols="30"
+                  rows="10"
+                ></textarea>
+
+                <label for="photos"
+                  >Anexar NFe / Fotos <strong>*</strong></label
+                >
+                <input type="file" name="photos" id="photos" />
+
+                <div class="text-align-right mt-4">
+                  <button type="submit" class="btn btn-primary">Enviar</button>
+                </div>
+              </form>
+            </div>
+          </li>
+          <li class="tab-content">
+            <div class="container-institucional">
+              <h2>Institucional .:. Novos Postos Autorizados</h2>
+              <p class="label-required">
+                Campos marcados com <strong>*</strong> são de preenchimento
+                obrigatório.
+              </p>
+              <form class="form-contact">
+                <label for="social-reason"
+                  >Razão Social <strong>*</strong></label
+                >
+                <input type="text" name="social-reason" id="social-reason" />
+                <label for="fantasy-name"
+                  >Nome Fantasia <strong>*</strong></label
+                >
+                <input type="text" name="fantasy-name" id="fantasy-name" />
+
+                <div class="flex ai-c gap-2 flex-col-mobile">
+                  <div class="flex-1 w-full-mobile">
+                    <label for="cnpj">Cnpj <strong>*</strong></label>
+                    <input type="text" name="cnpj" id="cnpj" />
+                  </div>
+                  <div class="flex-1 w-full-mobile">
+                    <label for="state-registration">Inscrição Estadual</label>
+                    <input
+                      type="text"
+                      name="state-registration"
+                      id="state-registration"
+                    />
+                  </div>
+                </div>
+
+                <div class="flex ai-c gap-2 flex-col-mobile">
+                  <div class="flex-1 w-full-mobile">
+                    <label for="address">Endereço <strong>*</strong></label>
+                    <input type="text" name="address" id="address" />
+                  </div>
+                  <div
+                    class="flex ai-c flex-1 gap-2 flex-col-mobile w-full-mobile"
+                  >
+                    <div class="w-full-mobile" style="flex: 2">
+                      <label for="neighborhood"
+                        >Bairro <strong>*</strong></label
+                      >
+                      <input
+                        type="text"
+                        name="neighborhood"
+                        id="neighborhood"
+                      />
+                    </div>
+                    <div class="w-full-mobile flex-1">
+                      <label for="number">Número <strong>*</strong></label>
+                      <input type="text" name="number" id="number" />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex ai-c gap-2 flex-col-mobile">
+                  <div class="flex-1 w-full-mobile">
+                    <label for="city">Cidade <strong>*</strong></label>
+                    <input type="text" name="city" id="city" />
+                  </div>
+                  <div
+                    class="flex ai-c flex-1 gap-2 flex-col-mobile w-full-mobile"
+                  >
+                    <div class="w-full-mobile" style="flex: 2">
+                      <label for="cep">CEP <strong>*</strong></label>
+                      <input type="text" name="cep" id="cep" />
+                    </div>
+                    <div class="flex-1 w-full-mobile">
+                      <label for="uf">UF <strong>*</strong></label>
+                      <input type="text" name="uf" id="uf" />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex ai-c gap-2">
+                  <div class="flex-1">
+                    <label for="phone1">Telefone <strong>*</strong></label>
+                    <input type="text" name="phone1" id="phone1" />
+                  </div>
+                  <div class="flex-1">
+                    <label for="phone2">Telefone</label>
+                    <input type="text" name="phone2" id="phone2" />
+                  </div>
+                </div>
+
+                <label for="email">E-mail <strong>*</strong></label>
+                <input type="email" name="email" id="email" />
+
+                <label for="contact"
+                  >Contato / Responsável <strong>*</strong></label
+                >
+                <input type="text" name="contact" id="contact" />
+
+                <label for="line"
+                  >Linha de produtos que atende <strong>*</strong></label
+                >
+                <input type="text" name="line" id="line" />
+                <label for="line">Região que atende <strong>*</strong></label>
+                <input type="text" name="line" id="line" />
+
+                <label for="line"
+                  >Referências profissionais <strong>*</strong></label
+                >
+                <input type="text" name="line" id="line" />
+                <div class="text-align-right mt-4">
+                  <button type="submit" class="btn btn-primary">Enviar</button>
+                </div>
+              </form>
+            </div>
+          </li>
+          <li class="tab-content">
+            <div class="container-institucional">
+              <h2>Institucional .:. Trabalhe na Venâncio</h2>
+              <p class="label-required">
+                Campos marcados com <strong>*</strong> são de preenchimento
+                obrigatório.
+              </p>
+              <form class="form-contact">
+                <label for="name">Nome <strong>*</strong></label>
+                <input type="text" name="name" id="name" />
+
+                <label for="email">E-mail <strong>*</strong></label>
+                <input type="email" name="email" id="email" />
+
+                <label for="phone">Telefone <strong>*</strong></label>
+                <input type="text" name="phone" id="phone" />
+
+                <label for="phone">Arquivo(s) <strong>*</strong></label>
+                <input type="file" name="phone" id="phone" />
+
+                <div class="text-align-right mt-4">
+                  <button type="submit" class="btn btn-primary">Enviar</button>
+                </div>
+              </form>
+            </div>
+          </li>
+          <li class="tab-content">Perguntas Frequentes</li>
+          <li class="tab-content">
+            <div class="container-institucional">
+              <h2>Institucional .:. Catálogo Virtual</h2>
+              <p class="label-required">
+                Campos marcados com <strong>*</strong> são de preenchimento
+                obrigatório.
+              </p>
+              <form class="form-contact">
+                <label for="name">Nome <strong>*</strong></label>
+                <input type="text" name="name" id="name" />
+
+                <label for="email">E-mail <strong>*</strong></label>
+                <input type="email" name="email" id="email" />
+
+                <label for="company">Empresa <strong>*</strong></label>
+                <input type="text" name="company" id="company" />
+                <label for="phone">Telefone </label>
+                <input type="text" name="phone" id="phone" />
+
+                <div class="text-align-right mt-4">
+                  <button type="submit" class="btn btn-primary">Enviar</button>
+                </div>
+              </form>
+            </div>
+          </li>
+        </ul>
       </div>
     </section>
 
