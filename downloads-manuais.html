@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,10 +9,12 @@
       href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./assets/css/swiper.css" />
     <link rel="stylesheet" href="./assets/css/fontawesome.css" />
+
     <link rel="stylesheet" href="./assets/css/main.css" />
     <link rel="stylesheet" href="./assets/css/custom.css" />
-    <title>Login</title>
+    <title>Downloads Manuais</title>
   </head>
   <body>
     <header class="border">
@@ -379,9 +381,7 @@
       <div class="breadcrumbs" style="margin-bottom: 0">
         <a href="">Home</a>
         <span>»</span>
-        <a href="">Institucional</a>
-        <span>»</span>
-        <a href="/quem-somos.html">Quem Somos</a>
+        <a href="">Downloads manuais</a>
       </div>
     </div>
 
@@ -421,89 +421,40 @@
       </a>
     </section>
 
-    <section class="container pv-8">
-      <div class="container-institucional pb-10">
-        <h2>Área do Cliente <span class="text-primary">.:.</span> Login</h2>
-        <p>
-          Área de acesso restrito a usuários cadastrados. <br />Para realizar
-          downloads, efetue seu cadastro e aguarde o recebimento de seu login e
-          senha.
-        </p>
+    <section class="container pv-8" style="min-height: 80vh">
+      <div class="container-institucional pb-5">
+        <h2>Downloads <span class="text-primary">.:.</span> Manuais</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       </div>
-      <div class="container-login">
-        <div class="columns md-gap">
-          <div class="col-md-5 col-sm-12">
-            <h4 class="title-login">
-              <span>|</span> Já sou cadastrado <span>|</span>
-            </h4>
-            <form class="form-item">
-              <label for="email">E-mail <strong>*</strong></label>
-              <input type="email" name="email" id="email" />
-
-              <label for="password">Senha <strong>*</strong></label>
-              <input type="password" name="password" id="password" />
-
-              <div class="text-align-right mt-4">
-                <button
-                  type="submit"
-                  class="btn btn-primary"
-                  style="font-size: 0.875rem"
-                >
-                  Entrar
-                </button>
-              </div>
-            </form>
-          </div>
-          <div class="col-md-2 col-sm-12 hide-mobile">
-            <div class="divider"></div>
-          </div>
-          <div class="col-md-5 col-sm-12">
-            <h4 class="title-login">
-              <span>|</span> Ainda não sou cadastrado <span>|</span>
-            </h4>
-            <form class="form-item">
-              <label for="email">E-mail <strong>*</strong></label>
-              <input type="email" name="email" id="email" />
-
-              <label for="country">País <strong>*</strong></label>
-              <select name="country" id="country"></select>
-
-              <div class="text-align-right mt-4">
-                <button
-                  type="submit"
-                  class="btn btn-primary"
-                  style="font-size: 0.875rem"
-                >
-                  Continuar
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
+      <div style="max-width: 600px; margin: 0 auto">
+        <form class="form-item">
+          <label for="select">Selecione:</label>
+          <select name="select" id="select">
+            <option value="">Selecione</option>
+          </select>
+        </form>
       </div>
-    </section>
-
-    <section class="newsletter hide-mobile">
-      <div class="container">
-        <div class="columns sm-gap ai-c">
-          <div class="col-md-4 col-sm-12">
-            <div class="flex ai-fs gap-3">
-              <i class="fa-regular fa-envelope fa-4x"></i>
-              <div class="title-newsletter">
-                <h2>Deseja receber nossas novidades exclusivas?</h2>
-                <p>
-                  Cadastre seu e-mail e receba informações periódicas da
-                  Venâncio.
-                </p>
+      <div class="container-manual">
+        <div class="flex fd-c gap-2 mt-4">
+          <div class="manual-item flex ai-c jc-sb gap-2">
+            <div class="flex ai-c gap-2">
+              <i class="fa-solid fa-file-pdf text-primary fa-2x"></i>
+              <div class="manual-title">
+                <p>AC20T / AC20ET / AC40T / AC40ET</p>
+                <p>Armário de Controle de Crescimento - Crescepão</p>
               </div>
             </div>
+            <button class="btn btn-primary manual-button">Enviar</button>
           </div>
-          <div class="col-md-8 col-sm-12">
-            <form class="flex ai-c gap-2 form-newsletter">
-              <input type="text" name="name" id="name" placeholder="Nome" />
-              <input type="email" name="email" id="email" placeholder="Email" />
-              <button type="submit" class="btn-newsletter">Cadastrar</button>
-            </form>
+          <div class="manual-item flex ai-c jc-sb gap-2">
+            <div class="flex ai-c gap-2">
+              <i class="fa-solid fa-file-pdf text-primary fa-2x"></i>
+              <div class="manual-title">
+                <p>AC20T / AC20ET / AC40T / AC40ET</p>
+                <p>Armário de Controle de Crescimento - Crescepão</p>
+              </div>
+            </div>
+            <button class="btn btn-primary manual-button">Enviar</button>
           </div>
         </div>
       </div>
@@ -548,7 +499,7 @@
             <h4 class="title-dropdown title-dropdown-active">Institucional</h4>
             <ul class="submenu-footer menu-dropdown">
               <li>
-                <a href="/quem-somos.html">Quem Somos </a>
+                <a href="/quem-somos.html">Quem Somos</a>
               </li>
               <li>
                 <a href=""> História </a>
@@ -712,5 +663,7 @@
       </div>
     </div>
   </body>
+
+  <script src="./assets/js/swiper.js"></script>
   <script src="./assets/js/main.js"></script>
 </html>
