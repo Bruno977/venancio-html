@@ -2102,12 +2102,14 @@ button.consent-button {
   gap: 30px; */
 }
 
-.contact-tabs-buttons li button {
+.contact-tabs-buttons li button,
+.contact-tabs-buttons li a {
   background-color: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  text-align: center;
   gap: 10px;
   color: #999797;
   font-weight: 700;
@@ -2240,7 +2242,8 @@ button.consent-button {
     padding-right: 1.25rem;
   }
 
-  .contact-tabs-buttons li button {
+  .contact-tabs-buttons li button,
+  .contact-tabs-buttons li a {
     width: 126px;
     height: 126px;
     margin: auto;
@@ -2250,7 +2253,8 @@ button.consent-button {
     font-weight: 900;
   }
 
-  .contact-tabs-buttons li button i {
+  .contact-tabs-buttons li button i,
+  .contact-tabs-buttons li a i {
     font-size: 3em;
   }
 
