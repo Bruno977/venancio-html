@@ -433,37 +433,37 @@
         <div class="swiper swiper-tabs">
           <ul class="swiper-wrapper contact-tabs-buttons mb-8">
             <li class="swiper-slide">
-              <button type="button" class="active">
+              <button type="button" id="contato" class="active">
                 <i class="fa-solid fa-envelope fa-4x"></i>
                 Contato
               </button>
             </li>
             <li class="swiper-slide">
-              <button type="button">
+              <button type="button" id="assistencia-tecnica">
                 <i class="fa-solid fa-screwdriver-wrench fa-4x"></i>
                 Assistência Técnica
               </button>
             </li>
             <li class="swiper-slide">
-              <button type="button">
+              <button type="button" id="cadastro-novos-postos-autorizados">
                 <i class="fa-solid fa-user-plus fa-4x"></i>
                 Cadastro Novos Postos Autorizados
               </button>
             </li>
             <li class="swiper-slide">
-              <button type="button">
+              <button type="button" id="trabalhe-na-venancio">
                 <i class="fa-solid fa-user-group fa-4x"></i>
                 Trabalhe na Venâncio
               </button>
             </li>
             <li class="swiper-slide">
-              <button type="button">
+              <button type="button" id="perguntas-frequentes">
                 <i class="fa-solid fa-comments fa-4x"></i>
                 Perguntas Frequentes
               </button>
             </li>
             <li class="swiper-slide">
-              <button type="button">
+              <button type="button" id="catalogo-virtual">
                 <i class="fa-regular fa-images fa-4x"></i>
                 Catálogo Virtual
               </button>
@@ -1105,6 +1105,18 @@
           allTabs[index].classList.add('active');
         });
       });
+    }
+
+    function getQueryParam(param) {
+      const urlParams = new URLSearchParams(window.location.search);
+      return urlParams.get(param);
+    }
+
+    const categoria = getQueryParam('categoria');
+
+    if (categoria) {
+      document.querySelector(`#${categoria}`).click();
+      console.log('Categoria: Assistência Técnica');
     }
   </script>
   <script>
