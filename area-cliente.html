@@ -421,33 +421,44 @@
       </a>
     </section>
 
-    <section class="container pv-8 container-product-mobile">
+    <section class="container pv-4 container-product-mobile">
       <h1 class="title">Área do Cliente</h1>
       <p class="subtitle">
         Cras rhoncus, quam vel sagittis posuere, nulla leo varius erat, eu
         pellentesque sapien metus quis nisi.<br />
         Maecenas in auctor eros. Ut id euismod nulla.
       </p>
+      <div class="flex ai-c jc-c profile mt-4">
+        <p class="text-primary">
+          <i class="fa-solid fa-user text-primary"></i>
+          <span class="font-weight-700"> Nome do Cliente </span>
+        </p>
+        <div class="flex ai-c gap-1">
+          <a href="">Alterar Dados</a>
+          <span>|</span>
+          <button type="button">Sair</button>
+        </div>
+      </div>
     </section>
 
     <section
-      class="container contact-tabs-description"
-      style="min-height: 50vh"
+      class="container contact-tabs-description client-area"
+      style="min-height: 80vh"
     >
       <div class="swiper-padding">
         <div class="swiper swiper-tabs">
-          <ul class="swiper-wrapper contact-tabs-buttons mb-8">
+          <ul class="swiper-wrapper contact-tabs-buttons mb-6">
             <li class="swiper-slide">
-              <a href="#" type="button">
+              <button type="button" class="active">
                 <i class="fa-solid fa-download fa-4x"></i>
                 Downloads
-              </a>
+              </button>
             </li>
             <li class="swiper-slide">
-              <a href="#" type="button">
+              <button type="button">
                 <i class="fa-solid fa-barcode fa-4x"></i>
                 Boletos
-              </a>
+              </button>
             </li>
           </ul>
           <div class="container container-arrows">
@@ -459,6 +470,115 @@
             </div>
           </div>
         </div>
+      </div>
+      <div class="container pb-8">
+        <ul class="content-tabs">
+          <li class="tab-content active">
+            <div class="container-manual">
+              <div class="flex fd-c gap-2 mt-4">
+                <div class="manual-item flex ai-c jc-sb gap-2">
+                  <div class="flex ai-c gap-2">
+                    <i class="fa-solid fa-file-pdf text-primary fa-2x"></i>
+                    <div class="manual-title">
+                      <p>AC20T / AC20ET / AC40T / AC40ET</p>
+                      <p style="padding-top: 0px">
+                        Armário de Controle de Crescimento - Crescepão
+                      </p>
+                    </div>
+                  </div>
+                  <button class="btn btn-primary manual-button">Baixar</button>
+                </div>
+                <div class="manual-item flex ai-c jc-sb gap-2">
+                  <div class="flex ai-c gap-2">
+                    <i class="fa-solid fa-circle-play text-primary fa-2x"></i>
+                    <div class="manual-title">
+                      <p>Nome do Arquivo do Vídeo</p>
+                      <p style="padding-top: 0px">.mov</p>
+                    </div>
+                  </div>
+                  <button class="btn btn-primary manual-button">Baixar</button>
+                </div>
+                <div class="manual-item flex ai-c jc-sb gap-2">
+                  <div class="flex ai-c gap-2">
+                    <i class="fa-solid fa-image text-primary fa-2x"></i>
+                    <div class="manual-title">
+                      <p>Nome do Pacote de Imagens</p>
+                      <p style="padding-top: 0px">.zip</p>
+                    </div>
+                  </div>
+                  <button class="btn btn-primary manual-button">Baixar</button>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="tab-content">
+            <div class="container-table">
+              <table>
+                <thead>
+                  <tr>
+                    <th>VENCIMENTO</th>
+                    <th>RECEBIMENTO</th>
+                    <th>DESCRIÇÃO</th>
+                    <th>TOTAL</th>
+                    <th>SITUAÇÃO</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>01/12/2023</td>
+                    <td>28/11/2023</td>
+                    <td>Informações sobre os dados do boleto</td>
+                    <td>R$ 3.195,15</td>
+                    <td>
+                      <span class="tag received">Recebido</span>
+                    </td>
+                    <td>
+                      <button
+                        type="button"
+                        class="button-actions btn btn-primary"
+                      >
+                        Ações
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>01/12/2023</td>
+                    <td>28/11/2023</td>
+                    <td>Informações sobre os dados do boleto</td>
+                    <td>R$ 3.195,15</td>
+                    <td>
+                      <span class="tag opened">Aberto</span>
+                    </td>
+                    <td>
+                      <button
+                        type="button"
+                        class="button-actions btn btn-primary"
+                      >
+                        Ações
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>01/12/2023</td>
+                    <td>28/11/2023</td>
+                    <td>Informações sobre os dados do boleto</td>
+                    <td>R$ 3.195,15</td>
+                    <td><span class="tag delay">Atraso</span></td>
+                    <td>
+                      <button
+                        type="button"
+                        class="button-actions btn btn-primary"
+                      >
+                        Ações
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </li>
+        </ul>
       </div>
     </section>
 
