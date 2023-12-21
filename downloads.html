@@ -438,28 +438,28 @@
         <div class="swiper swiper-tabs">
           <ul class="swiper-wrapper contact-tabs-buttons mb-8">
             <li class="swiper-slide">
-              <a href="#" type="button">
+              <button type="button" id="manuais" class="active">
                 <i class="fa-solid fa-file-pdf fa-4x"></i>
                 Manuais
-              </a>
+              </button>
             </li>
             <li class="swiper-slide">
-              <a href="#" type="button">
+              <button id="blocos" type="button">
                 <i class="fa-solid fa-file fa-4x"></i>
                 Blocos
-              </a>
+              </button>
             </li>
             <li class="swiper-slide">
-              <a href="#" type="button">
+              <a href="/contato.html?categoria=catalogo-virtual" type="button">
                 <i class="fa-solid fa-panorama fa-4x"></i>
                 Catálogo
               </a>
             </li>
             <li class="swiper-slide">
-              <a href="#" type="button">
+              <button id="videos" type="button">
                 <i class="fa-solid fa-circle-play fa-4x"></i>
                 Vídeos
-              </a>
+              </button>
             </li>
           </ul>
           <div class="container container-arrows">
@@ -471,6 +471,96 @@
             </div>
           </div>
         </div>
+      </div>
+      <div class="container pb-8">
+        <ul class="content-tabs">
+          <li class="tab-content active">
+            <div class="container-manual">
+              <div class="flex fd-c gap-2 mt-4">
+                <div class="manual-item flex ai-c jc-sb gap-2">
+                  <div class="flex ai-c gap-2">
+                    <i class="fa-solid fa-file-pdf text-primary fa-2x"></i>
+                    <div class="manual-title">
+                      <p>AC20T / AC20ET / AC40T / AC40ET</p>
+                      <p style="padding-top: 0">
+                        Armário de Controle de Crescimento - Crescepão
+                      </p>
+                    </div>
+                  </div>
+                  <button class="btn btn-primary manual-button">Enviar</button>
+                </div>
+                <div class="manual-item flex ai-c jc-sb gap-2">
+                  <div class="flex ai-c gap-2">
+                    <i class="fa-solid fa-file-pdf text-primary fa-2x"></i>
+                    <div class="manual-title">
+                      <p>AC20T / AC20ET / AC40T / AC40ET</p>
+                      <p style="padding-top: 0">
+                        Armário de Controle de Crescimento - Crescepão
+                      </p>
+                    </div>
+                  </div>
+                  <button class="btn btn-primary manual-button">Enviar</button>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="tab-content">
+            <div class="container-manual">
+              <div class="flex fd-c gap-2 mt-4">
+                <div class="manual-item flex ai-c jc-sb gap-2">
+                  <div class="flex ai-c gap-2">
+                    <i class="fa-solid fa-file text-primary fa-2x"></i>
+                    <div class="manual-title">
+                      <p>AC20T / AC20ET / AC40T / AC40ET</p>
+                      <p style="padding-top: 0">
+                        Armário de Controle de Crescimento - Crescepão
+                      </p>
+                    </div>
+                  </div>
+                  <button class="btn btn-primary manual-button">Enviar</button>
+                </div>
+                <div class="manual-item flex ai-c jc-sb gap-2">
+                  <div class="flex ai-c gap-2">
+                    <i class="fa-solid fa-file text-primary fa-2x"></i>
+                    <div class="manual-title">
+                      <p>AC20T / AC20ET / AC40T / AC40ET</p>
+                      <p style="padding-top: 0">
+                        Armário de Controle de Crescimento - Crescepão
+                      </p>
+                    </div>
+                  </div>
+                  <button class="btn btn-primary manual-button">Enviar</button>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="tab-content">
+            <div class="container-manual">
+              <div class="flex fd-c gap-2 mt-4">
+                <div class="manual-item flex ai-c jc-sb gap-2">
+                  <div class="flex ai-c gap-2">
+                    <i class="fa-solid fa-circle-play text-primary fa-2x"></i>
+                    <div class="manual-title">
+                      <p>AC20T / AC20ET / AC40T / AC40ET</p>
+                      <p style="padding-top: 0">.mov</p>
+                    </div>
+                  </div>
+                  <button class="btn btn-primary manual-button">Enviar</button>
+                </div>
+                <div class="manual-item flex ai-c jc-sb gap-2">
+                  <div class="flex ai-c gap-2">
+                    <i class="fa-solid fa-circle-play text-primary fa-2x"></i>
+                    <div class="manual-title">
+                      <p>AC20T / AC20ET / AC40T / AC40ET</p>
+                      <p style="padding-top: 0">.mov</p>
+                    </div>
+                  </div>
+                  <button class="btn btn-primary manual-button">Enviar</button>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
       </div>
     </section>
 
@@ -700,5 +790,34 @@
         prevEl: '.swiper-tabs .swiper-button-prev',
       },
     });
+  </script>
+  <script>
+    const btnTabs = document.querySelectorAll('.contact-tabs-buttons button');
+    const allTabs = document.querySelectorAll('.content-tabs li');
+    if (btnTabs.length) {
+      btnTabs.forEach((btn, index) => {
+        btn.addEventListener('click', (event) => {
+          btnTabs.forEach((btn) => {
+            btn.classList.remove('active');
+          });
+          allTabs.forEach((tab) => {
+            tab.classList.remove('active');
+          });
+          btn.classList.add('active');
+          allTabs[index].classList.add('active');
+        });
+      });
+    }
+
+    function getQueryParam(param) {
+      const urlParams = new URLSearchParams(window.location.search);
+      return urlParams.get(param);
+    }
+
+    const categoria = getQueryParam('categoria');
+
+    if (categoria) {
+      document.querySelector(`#${categoria}`).click();
+    }
   </script>
 </html>
