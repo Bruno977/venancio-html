@@ -2653,7 +2653,7 @@ input:checked + .slider:before {
   opacity: 1;
 }
 .register {
-  max-width: 600px;
+  max-width: 1020px;
   margin: 0 auto;
   padding-left: 1.25rem;
   padding-right: 1.25rem;
